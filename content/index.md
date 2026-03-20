@@ -1,5 +1,8 @@
-## title: Archive of my Journey
+---
+title: "Archive of my Journey"
+---
 
+![[copertina.jpg]]
 ![[copertina.jpg]]
 
 > [!quote] 🌍 Il mio Diario di Avventure Benvenuti nel mio archivio digitale. Qui raccolgo i miei appunti, gli itinerari dettagliati, le tabelle di marcia e i ricordi dei miei viaggi in giro per il mondo. Preparate lo zaino!
