@@ -1,5 +1,4 @@
+[[Pasted image 20260320143706.png]]
 # Benvenuti nel mio archivio viaggi! ✈️
-Qui raccolgo i miei itinerari e le mie spese.
-
-Dai un'occhiata al mio ultimo viaggio: [[Giappone Marzo 2026]]
-PROVA TEST 1
+> [!quote] Benvenuti nel mio archivio! 🌍
+> Qui raccolgo appunti, itinerari e tabelle di tutti i miei viaggi in giro per il mondo. Preparate lo zaino!
