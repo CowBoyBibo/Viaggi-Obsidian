@@ -142,12 +142,13 @@
 
 # Spese Totali
 
-| Volo          | 1491.64 |
-| ------------- | ------: |
-| Alloggi       | 1380.19 |
-| Generali      | 1413.95 |
-| Assicurazione |   82.17 |
-| e-Sim         |   21.01 |
-| Parcheggio    |   75.00 |
-| **TOTALE**    |    sum^ |
+| Volo          |  1491.64 |
+| ------------- | -------: |
+| Alloggi       |  1380.19 |
+| Generali      |  1413.95 |
+| Assicurazione |    82.17 |
+| e-Sim         |    21.01 |
+| Parcheggio    |    75.00 |
+| **TOTALE**    | 4.463,96 |
+
 
