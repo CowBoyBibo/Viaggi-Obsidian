@@ -25,11 +25,17 @@
 13 GIORNI (01/03/2026 - 13/03/2026) 
 
 # REVOLUT
-1.000,00€ ->  161.587,00¥
-1.000,00€ ->  159.055,00¥
-
-   604,75€    <- 98.636,00¥
-
+|          Euro |     |          Yen |
+| ------------: | :-: | -----------: |
+|     1.000,00€ | ->  |  161.587,00¥ |
+|      1000,00€ | ->  |  159.055,00¥ |
+|       604,75€ | <-  |   98.636,00¥ |
+| **1.395,25€** |  =  | **222.006¥** |
+dovrebbero esserci anche 1.000,00€ in contanti, più altri prelievi che però non ricordo con precisione 
 # E-SIM
-Luca  ---
-Mamma ---
+2 e-Sim di [Saily](https://saily.com/it/coupon/)
+20Gb 30 giorni 22,49$
+  5Gb 30 giorni 10,99$
+  5Gb 30 giorni 10,99$
+  **Totale             38,42€**
+  
