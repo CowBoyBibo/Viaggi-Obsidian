@@ -1,4 +1,3 @@
-
 # Periodo 01/03/2025 - 14/03/2025
 
 # Volo
@@ -34,8 +33,10 @@
 dovrebbero esserci anche 1.000,00€ in contanti, più altri prelievi che però non ricordo con precisione 
 # E-SIM
 2 e-Sim di [Saily](https://saily.com/it/coupon/)
-20Gb 30 giorni 22,49$
-  5Gb 30 giorni 10,99$
-  5Gb 30 giorni 10,99$
-  **Totale             38,42€**
   
+| Durata    |     Gb     |     Prezzo |
+|:--------- |:----------:| ----------:|
+| 30 Giorni |     20     |     22,49$ |
+| 30 Giorni |     5      |     10,99$ |
+| 30 Giorni |     5      | 10,99$<br> |
+|           | **Totale** | **38,42€** |

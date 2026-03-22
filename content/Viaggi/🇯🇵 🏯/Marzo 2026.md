@@ -1,4 +1,3 @@
- 
 # Periodo 02/03/2026 - 19/03/2026  
 # Volo
 - 1.491,64 2 Persone (745,82€) [Cathay Pacific](https://www.cathaypacific.com/cx/it_IT.html)
@@ -137,16 +136,20 @@
 | **1.890,95€** |  =  | **346.587¥** |
 
 # E-SIM
-2 e-Sim di [Saily](https://saily.com/it/coupon/)
-10Gb 30 giorni 17,09$
-  3Gb 30 giorni   7,59$
-  **Totale             21,01€**
+e-Sim di [Saily](https://saily.com/it/coupon/)
+
+| Durata    |     Gb     |     Prezzo |
+|:--------- |:----------:| ----------:|
+| 30 Giorni |     10     |     17,09$ |
+| 30 Giorni |     3      |      7,59$ |
+|           | **Totale** | **21,01€** |
 
 
 # Spese Totali
 
-| Volo          |  1491.64 |
+| Categoria     |   Prezzo |
 | ------------- | -------: |
+| Volo          |  1491.64 |
 | Alloggi       |  1380.19 |
 | Generali      |  1413.95 |
 | Assicurazione |    82.17 |
