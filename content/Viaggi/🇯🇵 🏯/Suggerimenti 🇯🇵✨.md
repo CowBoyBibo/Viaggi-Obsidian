@@ -15,3 +15,4 @@
 	- [Ravioli](https://www.google.com/maps/place/%E9%A4%83%E5%AD%90%E3%82%84%E7%8D%85%E4%B8%B8+%E6%9D%B1%E4%B8%AD%E9%87%8E%E5%BA%97/@35.7047914,139.6827427,18z/data=!4m15!1m8!3m7!1s0x6018f2c97a04279b:0x555597f31f268009!2sHigashinakano,+Nakano,+Tokyo+164-0003,+Giappone!3b1!8m2!3d35.7055896!4d139.6834802!16s%2Fg%2F120vbt0y!3m5!1s0x6018f2c8fa991529:0x99cd65e3bc677d8c!8m2!3d35.7048549!4d139.6828677!16s%2Fg%2F11cs1sflk0!18m1!1e1?entry=ttu&g_ep=EgoyMDI2MDMxOC4wIKXMDSoASAFQAw%3D%3D)
 	- [Anguilla](https://www.google.com/maps/place/Izumo+Ikebukuro/@35.7300224,139.7097689,888m/data=!3m2!1e3!4b1!4m6!3m5!1s0x60188d06e8f6de9d:0xde7a04a7fd57a130!8m2!3d35.7300224!4d139.7097689!16s%2Fg%2F11h__1z3_q!18m1!1e1?entry=ttu&g_ep=EgoyMDI2MDMxOC4wIKXMDSoASAFQAw%3D%3D)
 	- [Ramen](https://maps.app.goo.gl/5H1j53DRBqwgD5SA9)
+	- [Tempura](https://maps.app.goo.gl/TSzHZJVp7grG96Y18)
