@@ -13,7 +13,7 @@ title: "Archive of my Journey"
 -  [[Marzo 2026 🏯]] 
 
 ## ✨Suggerimenti 🇯🇵
-- [[Gite ⛩️]] - _Vicino Tokyo
+- [[Gite ⛩️]] - _Vicino Tokyo_
 	
 - [[Cibo 🍜]] - _Tipico e tradizionale_
 
