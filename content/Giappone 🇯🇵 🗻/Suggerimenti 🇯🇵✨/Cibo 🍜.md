@@ -24,3 +24,4 @@
 
 ![[Tempura.jpg|400]]
 ## [Tempura](https://maps.app.goo.gl/TSzHZJVp7grG96Y18) vicino alla stazione di #Takahatafudō 
+
