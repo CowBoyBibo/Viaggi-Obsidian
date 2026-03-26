@@ -6,4 +6,5 @@
 - [Tempio Shintoista Vicino alla stazione di #Tōbu-nikkō](https://maps.app.goo.gl/WNV3GDzoUJQnGSKU8)
 - [Tempio Buddista Vicino alla stazione di #Kamakura](https://maps.app.goo.gl/Fx1Apsjny2f1WvDaA)
 
+
  
