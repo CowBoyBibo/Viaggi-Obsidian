@@ -32,7 +32,7 @@
 | **1.395,25€** |  =  | **222.006¥** |
 dovrebbero esserci anche 1.000,00€ in contanti, più altri prelievi che però non ricordo con precisione 
 # E-SIM
-2 e-Sim di [Saily](https://saily.com/it/coupon/)
+3 e-Sim di [Saily](https://saily.com/it/coupon/)
   
 | Durata    |     Gb     |     Prezzo |
 |:--------- |:----------:| ----------:|

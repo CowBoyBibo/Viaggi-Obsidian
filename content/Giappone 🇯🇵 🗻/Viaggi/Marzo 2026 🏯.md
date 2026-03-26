@@ -121,9 +121,11 @@
   75,00€  [P6 Smart](https://www.milanairports-shop.com/it/parcheggi/parcheggi-malpensa)
   18 GIORNI (02/03 09:30 - 19/03 08:30)
 
+
 # ASSICURAZIONE
   82,17€ 2 Persone  [Heymondo Assicurazioni](https://heymondo.it/)
   17 GIORNI (02/03/2026 - 18/03/2026) 
+
 
 # REVOLUT
 
@@ -136,7 +138,7 @@
 | **1.890,95€** |  =  | **346.587¥** |
 
 # E-SIM
-e-Sim di [Saily](https://saily.com/it/coupon/)
+2 e-Sim di [Saily](https://saily.com/it/coupon/)
 
 | Durata    |     Gb     |     Prezzo |
 |:--------- |:----------:| ----------:|
@@ -144,17 +146,17 @@ e-Sim di [Saily](https://saily.com/it/coupon/)
 | 30 Giorni |     3      |      7,59$ |
 |           | **Totale** | **21,01€** |
 
-
 # Spese Totali
 
-| Categoria     |   Prezzo |
-| ------------- | -------: |
-| Volo          |  1491.64 |
-| Alloggi       |  1380.19 |
-| Generali      |  1413.95 |
-| Assicurazione |    82.17 |
-| e-Sim         |    21.01 |
-| Parcheggio    |    75.00 |
-| **TOTALE**    | 4.463,96 |
+| Categoria     |    Prezzo |
+| ------------- | --------: |
+| Volo          | 1.491,64€ |
+| Alloggi       | 1.380,19€ |
+| Generali      | 1.413,95€ |
+| Parcheggio    |    75,00€ |
+| Assicurazione |    82,17€ |
+| e-Sim         |    21,01€ |
+| **TOTALE**    | 4.463,96€ |
+
 
 
