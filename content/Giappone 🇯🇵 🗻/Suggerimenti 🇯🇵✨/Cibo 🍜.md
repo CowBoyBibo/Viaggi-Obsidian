@@ -27,3 +27,11 @@
 ![[Tempura.jpg|400]]
 
 
+## [Sushi](https://maps.app.goo.gl/HSE4AL34rSFcv9757) vicino alla stazione di #Nara
+![[Sushi.jpg|400]] 
+![[Sushi_2.jpg|400]]
+
+
+## [Izakaya](https://maps.app.goo.gl/mHQ2drd3sA67ucy4A) vicino alla stazione di #Nara 
+![[Izakaya.jpg|400]]
+![[Izakaya_2.jpg|400]]
