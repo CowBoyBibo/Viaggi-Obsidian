@@ -1,4 +1,3 @@
-
 ## [Ravioli](https://maps.app.goo.gl/YGekXw4RGC5omnWV6) vicino alla stazione di #Higashi-Nakano
 ![[Ravioli.jpg|400]]
 
@@ -35,3 +34,27 @@
 ## [Izakaya](https://maps.app.goo.gl/mHQ2drd3sA67ucy4A) vicino alla stazione di #Nara 
 ![[Izakaya.jpg|400]]
 ![[Izakaya_2.jpg|400]]
+
+
+## [Okonomiyaki](https://maps.app.goo.gl/UaXYQgnWEpJLupou6) vicino alla stazione di #Namba 
+![[Okonomiyaki.jpg|400]]
+
+
+## [Curry](https://maps.app.goo.gl/2AJ1iDq83evUPQbA7) vicino alla stazione di #Yamato-Saidaiji
+![[Curry.jpg|400]]
+
+
+## [Tradizionale](https://maps.app.goo.gl/1AEy8NztvQ5wk5aW9) vicino alla stazione di #Seki
+![[Tradizionale.jpg|400]]
+
+
+## [Udon](https://maps.app.goo.gl/TJ1dyndTauJeZsWs7) vicino alla stazione di #Narai
+![[Udon.jpg|400]]
+
+
+## [Tonkatsu](https://maps.app.goo.gl/DmZQ3eHNDwC4T9Ce8) vicino alla stazione di #Narai 
+![[Tonkatsu_2.jpg|400]]
+
+
+## [Tonkatsu](https://maps.app.goo.gl/V3mxv31FU5b98F7b7) vicino alla stazione di #Koiwa 
+![[Tonkatsu_3.jpg|400]]
