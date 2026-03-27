@@ -5,6 +5,9 @@
 - [Tempio Shintoista Vicino alla stazione di #Todaimae](https://www.google.com/maps/place/Tempio+Nezu/@35.7213772,139.7603843,1256m/data=!3m1!1e3!4m6!3m5!1s0x60188c32ce217ef9:0xc0a807378062b0d!8m2!3d35.7201366!4d139.7607695!16s%2Fm%2F046584q!18m1!1e1?entry=ttu&g_ep=EgoyMDI2MDMxOC4wIKXMDSoASAFQAw%3D%3D)
 - [Tempio Shintoista Vicino alla stazione di #Tōbu-nikkō](https://maps.app.goo.gl/WNV3GDzoUJQnGSKU8)
 - [Tempio Buddista Vicino alla stazione di #Kamakura](https://maps.app.goo.gl/Fx1Apsjny2f1WvDaA)
+- [Tempio Buddista Vicino alla stazione di #Nara](https://maps.app.goo.gl/o8GwzXFG58naRqMc8)
+- [Tempio Buddista Vicino alla stazione di #Nara](https://maps.app.goo.gl/MrguqhRpxidQJeJ26)
+
 
 
  
