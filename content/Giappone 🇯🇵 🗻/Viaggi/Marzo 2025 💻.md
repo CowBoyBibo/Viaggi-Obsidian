@@ -30,7 +30,13 @@
 |      1000,00€ | ->  |  159.055,00¥ |
 |       604,75€ | <-  |   98.636,00¥ |
 | **1.395,25€** |  =  | **222.006¥** |
-dovrebbero esserci anche 1.000,00€ in contanti, più altri prelievi che però non ricordo con precisione 
+
+## CONTANTI
+
+|      Euro |     |      Yen |
+| --------: | :-: | -------: |
+| 1.100,00€ | ->  | 170.500¥ |
+
 # E-SIM
 3 e-Sim di [Saily](https://saily.com/it/coupon/)
   
@@ -40,3 +46,15 @@ dovrebbero esserci anche 1.000,00€ in contanti, più altri prelievi che però 
 | 30 Giorni |     5      |     10,99$ |
 | 30 Giorni |     5      | 10,99$<br> |
 |           | **Totale** | **38,42€** |
+
+## SPESE TOTALI
+
+| Categoria     |    Prezzo |
+| ------------- | --------: |
+| Volo          | 1.492,41€ |
+| Alloggi       | 2.576,00€ |
+| Generali      | 2.495,25€ |
+| Parcheggio    |    70,00€ |
+| Assicurazione |   122,89€ |
+| e-Sim         |    38,42€ |
+| **TOTALE**    | 6.794,97€ |
