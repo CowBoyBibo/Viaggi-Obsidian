@@ -24,5 +24,5 @@ title: "Archive of my Journey"
 
 - [[Link utili per viaggiare 🚏]] - _App, siti e strumenti indispensabili_
 	
-- [Immigrazione Giapponese](https://www.vjw.digital.go.jp/main/#/vjwplo001)🪪 - _ti farà risparmiare un sacco di tempo appena atterri
+- [Immigrazione Giapponese](https://www.vjw.digital.go.jp/main/#/vjwplo001)🪪 - _ti farà risparmiare un sacco di tempo appena atterri_
 
