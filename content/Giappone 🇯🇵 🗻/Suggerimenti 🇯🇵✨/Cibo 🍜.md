@@ -1,3 +1,44 @@
+---
+title: "🍜 Sopravvivenza Culinaria: La Regola del Marcio"
+---
+# 🍶 Mangiare in Giappone: Guida per l'Esploratore Vero
+
+Dimentica le guide turistiche patinate e i ristoranti con la coda fuori a Shibuya.
+In Giappone, se vuoi mangiare davvero bene, devi smettere di guardare l'estetica e iniziare a guardare la "sostanza".
+
+In questa sezione raccolgo i posti che mi hanno convinto, sparsi un po' ovunque, seguendo un unico grande pattern che non sbaglia mai.
+
+---
+
+> [!danger] La Regola d'Oro: Più è marcio, più è buono
+> C'è una costante che ho notato e che devi stamparti in testa: **il livello del cibo è inversamente proporzionale alla bellezza del locale.**
+> 
+> * **Il segnale:** Insegna sbiadita dal sole, pareti ingiallite dal grasso e dal fumo, cucina a vista che ha visto passare decenni.
+> * **L'atmosfera:** Nessun sottofondo lounge, solo il rumore della piastra e il proprietario che ti guarda a malapena.
+> * **Il risultato:** È proprio lì, in quei posti che sembrano rimasti bloccati agli anni '80, che troverai i sapori più incredibili. Se il posto sembra "sporco" o vecchio, entra. È una garanzia.
+
+---
+
+## 🧭 Come scelgo dove entrare
+
+Non serve un'app, serve spirito di osservazione. Ecco i miei criteri:
+
+1. **Zero Turisti:** Se senti parlare solo giapponese, sei sulla strada giusta.
+2. **Il Menu "Vissuto":** Se il menu è un foglio di carta unto o una lavagnetta scritta a mano con i prezzi che non cambiano dal secolo scorso, vai sul sicuro.
+3. **Sotto i Binari o nei Vicoli:** I posti migliori sono spesso incastrati in spazi impossibili sotto le stazioni della JR o in vicoli dove passa a stento una persona.
+
+---
+
+## 🗺️ La Mappa dei Posti Veri
+
+In questa mappa segno i punti esatti dove ho mangiato bene, _quelli con l'icona della ciotola rossa_. Sono sparsi un po' ovunque, ma hanno tutti una cosa in comune: non ti deluderanno.
+<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1ThT5n8aWXjmLqAJ24xL-zvyPODD_QCI&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
+
+---
+
+> [!tip] Un consiglio per te
+> Non farti paranoie per la lingua. In questi posti "marci" spesso non sanno una parola di inglese, ma basta un "Kore, kudasai" (questo, per favore) indicando il piatto di qualcuno o una foto. Fine. La pancia ringrazierà.
+
 ## [Ravioli](https://maps.app.goo.gl/YGekXw4RGC5omnWV6) vicino alla stazione di #Higashi-Nakano
 ![[Ravioli.jpg|400]]
 

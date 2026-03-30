@@ -18,6 +18,8 @@ title: "Archive of my Journey"
 - [[Cibo 🍜]] - _Tipico e tradizionale_
 	
 - [[Gite ⛩️]] - _Vicino Tokyo_
+	
+- [[BOOKOFF💻 & Hareruya🃏]] - _"Used" & TCG_
 
 
 ## 🎒 Strumenti e Guide
