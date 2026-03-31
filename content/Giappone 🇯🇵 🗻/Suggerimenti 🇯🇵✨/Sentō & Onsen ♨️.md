@@ -3,9 +3,9 @@ title: "♨️ Sentō & Onsen: Dove lavarsi (e rilassarsi) davvero"
 ---
 >[!tip] Kit di Sopravvivenza
 >
->Regola base: porta sempre un piccolo asciugamano nello zaino.
+>**Regola base**: porta sempre un piccolo asciugamano nello zaino.
 >
->Non sai mai quando incrocerai un onsen magico.
+>_Non sai mai quando incrocerai un onsen magico_.
 
 In Giappone, il bagno non è solo igiene, è un rito. 
 Ecco i posti che ho provato e che ti consiglio.
@@ -18,7 +18,7 @@ Ecco i posti che ho provato e che ti consiglio.
 >
 >**Uso**: È "day-use", quindi puoi entrare anche se non dormi lì, un'esperienza di classe.
 
-### 🌿[Maenohara Onsen Sayano Yudokoro (Tokyo)](https://maps.app.goo.gl/AXmEgLtznB9VB6a97)**:
+### 🌿 **[Maenohara Onsen Sayano Yudokoro (Tokyo)](https://maps.app.goo.gl/AXmEgLtznB9VB6a97)**:
 > [!danger] Immerso nella natura - ❌ No Tatuaggi
 > 
 >Un onsen naturale in piena Tokyo, costruito in una vecchia casa del periodo Showa.
