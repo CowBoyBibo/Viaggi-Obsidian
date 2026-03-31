@@ -17,9 +17,11 @@ title: "Archive of my Journey"
 ## ✨Suggerimenti 🇯🇵
 - [[Cibo 🍜]] - _Tipico e tradizionale_
 	
-- [[Gite ⛩️]] - _Vicino Tokyo_
+- [[Gite ⛩️]] - _Vicino Tokyo e non_
 	
 - [[BOOKOFF💻 & Hareruya🃏]] - _"Used" & TCG_
+	
+- [[Sentō ♨️]] - _work in progress_ ❌
 
 
 ## 🎒 Strumenti e Guide
