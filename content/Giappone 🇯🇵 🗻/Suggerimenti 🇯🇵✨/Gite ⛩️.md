@@ -49,7 +49,6 @@ Sto aggiungendo i dettagli man mano che i ricordi (e le foto) riemergono.
 * **[Inō Tadataka (Sawara)](https://maps.app.goo.gl/XRPA8TU5N1YHG8bi9)**: visita la dimora del cartografo che ha Mappato il Giappone un passo alla volta. Si trova in un borgo fermo all'epoca Edo, tra canali navigabili e botteghe antiche: zero cemento, solo storia vera.
  > [!quote] Un passo alla volta
 > Inō Tadataka ha camminato per circa 35.000 chilometri per creare la prima mappa accurata del Giappone. Se lui ha fatto tutto il perimetro a piedi nel 1800, tu puoi farti tranquillamente una passeggiata per il borgo di Sawara! 🚶‍♂️🗺️
----
 
 - **[Parco di Nara (Nara)](https://maps.app.goo.gl/UmPkRgHJMRuncFQB9)** prenditi del tempo per visitare questo splendido parco, ti consiglio anche ti visitare il [Tempio Todai-Ji](https://maps.app.goo.gl/SGKq3XXHRGihYKDaA) 
 >[!tip] Un consiglio per te
@@ -67,8 +66,7 @@ Sto aggiungendo i dettagli man mano che i ricordi (e le foto) riemergono.
   Cammina piano e guarda i dettagli: le finestre a grata (_koushi_) e i muri esterni sono quasi tutti originali o restaurati seguendo i metodi tradizionali. Non ci sono quasi insegne moderne o pali della luce invasivi; è un museo a cielo aperto dove la gente vive ancora normalmente.
 >[!tip] Per la tua visita
 >Inizia a esplorare Seki-Juku da [Seki Machinami Museum](https://maps.app.goo.gl/9EnF6zUmY1ivK6sb8) poi prosegui per [Sekijuku Hatago Tamaya Historical Museum](https://maps.app.goo.gl/YKevjBEGBbmocwZY6) (per vedere come dormivano i viandanti) e concludi il percorso con [Seki no Yama Kaikan](https://maps.app.goo.gl/4Go7m6W4hhnGcJCF8).
->Se hai tempo, cerca la salita verso il [punto panoramico](): la vista sui tetti è la fine del mondo. 🏯
----
+>Se hai tempo, cerca la salita verso il punto panoramico: la vista sui tetti è la fine del mondo. 🏯
 
 - **[Narai-Juku (Valle del Kiso)](https://maps.app.goo.gl/p3A4jpAUDGnG59w99)**: È la stazione di posta più lunga di tutto il Giappone: un chilometro intero di puro legno, locande d'epoca e zero cemento a vista.
   Se cerchi l'essenza della vecchia via Nakasendo, Narai è il "boss finale".
@@ -77,5 +75,3 @@ Sto aggiungendo i dettagli man mano che i ricordi (e le foto) riemergono.
   >[!warning] Narai-juku è di una bellezza imbarazzante, ma ha un difetto: **alle 17:00 muore tutto...**
   >I negozi chiudono, le serrande scendono e resti solo tu con i corvi...
   >Se non dormi in un Ryokan lì, assicurati di avere il treno del ritorno sottomano perché il rischio "città fantasma" è altissimo.
-
----
