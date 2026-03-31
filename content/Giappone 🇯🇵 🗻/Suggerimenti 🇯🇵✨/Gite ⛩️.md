@@ -43,7 +43,7 @@ Sto aggiungendo i dettagli man mano che i ricordi (e le foto) riemergono.
 * **[Inokashira Benzaiten (Tokyo)](https://maps.app.goo.gl/gychRLWYxf9U7noW7)**: Tempio magico su un'isoletta circondata dal verde del parco, *atmosfera pura*.
 * **[🐍 Il sentiero del Serpente(Tokyo)](https://maps.app.goo.gl/YQ6trWjXUrdjDCN26)** **Yanaka, Sendagi e Nezu: tra mercati tradizionali e torii rossi**: Un itinerario a piedi che unisce la vivace **Yanaka Ginza** al suggestivo **Tempio Nezu**.
   Nel mezzo, attraversi **Hebi-Michi**: una stradina serpeggiante nata sopra un antico canale, dove casette basse e piccoli laboratori artigianali creano un'atmosfera magica e fuori dal tempo.
-### 📍 Mete a _Fuori_ Tokyo
+### 📍 Mete _Fuori_ Tokyo
 * **[Santuario di Nikkō (Nikkō)](https://maps.app.goo.gl/HYUfeT8unc8WSgUh7)**: Natura e spiritualità pura, un classico che non delude mai.
 * **[Kōtoku-in (Kamakura)](https://maps.app.goo.gl/WxasAB98LqCNz87UA)**: Tranquillo tempio noto per una monumentale statua in bronzo all'aperto del Buddha in posizione seduta.
 * **[Inō Tadataka (Sawara)](https://maps.app.goo.gl/XRPA8TU5N1YHG8bi9)**: visita la dimora del cartografo che ha Mappato il Giappone un passo alla volta. Si trova in un borgo fermo all'epoca Edo, tra canali navigabili e botteghe antiche: zero cemento, solo storia vera.
