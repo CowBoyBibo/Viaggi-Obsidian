@@ -31,7 +31,7 @@ Ecco i posti che ho provato e che ti consiglio.
 >
 >Sembra di stare in montagna, ma sei a 20 min di metro dal centro.
 
-### 🚿 **[Musashi Koyama Onsen Shimizuyu](https://maps.app.goo.gl/BVBLvq1tkiTvVtaP8)**
+### 🚿 **[Musashi Koyama Onsen Shimizuyu (Tokyo)](https://maps.app.goo.gl/BVBLvq1tkiTvVtaP8)**
 > [!check] 💰 Economico - ✅ TATTOO FRIENDLY
 > 
 > Semplice Sentō, _anche se nel nome c'è scritto Onsen..._ con saune e piscine termali al coperto e all'aperto
@@ -46,7 +46,7 @@ Ecco i posti che ho provato e che ti consiglio.
 >
 >È un posto rionale, molto autentico e affollato dai locali.
 
-### 🏮 **[KenkoYokusen](https://maps.app.goo.gl/gfpS6RHgc1f7RW7r5)**
+### 🏮 **[KenkoYokusen (Tokyo)](https://maps.app.goo.gl/gfpS6RHgc1f7RW7r5)**
 > [!check] 💰 Economico - ✅ TATTOO FRIENDLY 
 > 
 >Sentō al coperto molto pulito con 3 vasche che cambiano tipologia d'acqua a rotazione.
