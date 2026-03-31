@@ -21,7 +21,7 @@ title: "Archive of my Journey"
 	
 - [[BOOKOFF💻 & Hareruya🃏]] - _"Used" & TCG_
 	
-- [[Sentō & Onsen ♨️]] - _work in progress_ ❌
+- [[Sentō & Onsen ♨️]] - _Dedicati una coccola durante il tuo viaggio_ 
 
 
 ## 🎒 Strumenti e Guide
