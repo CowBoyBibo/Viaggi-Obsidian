@@ -72,6 +72,6 @@ Sto aggiungendo i dettagli man mano che i ricordi (e le foto) riemergono.
   Se cerchi l'essenza della vecchia via Nakasendo, Narai è il "boss finale".
   È soprannominata **"Narai dai mille tetti"** (_Narai Senken_) e quando ci cammini capisci perché: le case in legno scuro si susseguono senza sosta, creando un'atmosfera che definire magica è poco.
   **[Ponte Kiso-no-Ohashi](https://maps.app.goo.gl/mbXQ8XArVYjRS1Hz9)**: è un ponte in legno di cedro senza piloni nell'acqua, si trova proprio vicino alla stazione ed è un capolavoro di ingegneria antica.
->[!warning] Narai-juku è di una bellezza imbarazzante, ma ha un difetto: **alle 17:00 muore tutto...**
+>[!warning] Narai-juku è di una bellezza imbarazzante, ma ha un difetto: alle 17:00 muore tutto...
   >I negozi chiudono, le serrande scendono e resti solo tu con i corvi...
   >Se non dormi in un Ryokan lì, assicurati di avere il treno del ritorno sottomano perché il rischio "città fantasma" è altissimo.
