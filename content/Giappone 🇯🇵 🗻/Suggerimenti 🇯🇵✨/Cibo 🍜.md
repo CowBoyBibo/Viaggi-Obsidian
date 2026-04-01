@@ -99,3 +99,7 @@ In questa mappa segno i punti esatti dove ho mangiato bene, _quelli con l'icona 
 
 ## [Tonkatsu](https://maps.app.goo.gl/V3mxv31FU5b98F7b7) vicino alla stazione di #Koiwa 
 ![[Tonkatsu_3.jpg|400]]
+
+
+## [Taiyaki](https://maps.app.goo.gl/u5A2BZyCVUtFbHcB7) vicino alla stazione di #Matsumoto
+![[Taiyaki.jpg|400]]
