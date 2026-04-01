@@ -16,7 +16,7 @@ const config: QuartzConfig = {
       provider: "plausible",
     },
     locale: "it-IT",
-    baseUrl: "https://cowboybibo.github.io/Viaggi-Obsidian/",
+    baseUrl: "cowboybibo.github.io/Viaggi-Obsidian",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
     theme: {
