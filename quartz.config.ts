@@ -15,40 +15,40 @@ const config: QuartzConfig = {
     analytics: {
       provider: "plausible",
     },
-    locale: "en-US",
-    baseUrl: "quartz.jzhao.xyz",
+    locale: "it-IT",
+    baseUrl: "https://cowboybibo.github.io/Viaggi-Obsidian/",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
     theme: {
       fontOrigin: "googleFonts",
       cdnCaching: true,
       typography: {
-        header: "Schibsted Grotesk",
-        body: "Source Sans Pro",
+  	header: "Playfair Display", // Questo è per i titoli (molto elegante)
+  	body: "Lora",              // Questo è per i testi lunghi (stile libro antico)
         code: "IBM Plex Mono",
       },
       colors: {
-        lightMode: {
-          light: "#faf8f8",
-          lightgray: "#e5e5e5",
-          gray: "#b8b8b8",
-          darkgray: "#4e4e4e",
-          dark: "#2b2b2b",
-          secondary: "#284b63",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "#fff23688",
-        },
-        darkMode: {
-          light: "#161618",
-          lightgray: "#393639",
-          gray: "#646464",
-          darkgray: "#d4d4d4",
-          dark: "#ebebec",
-          secondary: "#7b97aa",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "#b3aa0288",
+  lightMode: {
+    light: "#fdf6e3",       // Sfondo (Carta pergamena chiara)
+    lightgray: "#eee8d5",   // Bordi e linee (Seppia chiarissimo)
+    gray: "#93a1a1",        // Testo secondario (Grigio caldo)
+    darkgray: "#586e75",    // Testo principale (Carbone/Marrone scuro)
+    dark: "#073642",        // Titoli (Petrolio scuro, molto leggibile)
+    secondary: "#b58900",   // Link (Oro antico / Ocra)
+    tertiary: "#cb4b16",    // Accento / Hover (Arancio bruciato)
+    highlight: "rgba(181, 137, 0, 0.15)", // Evidenziatore
+  },
+  darkMode: {
+    light: "#1e1c19",       // Sfondo (Legno scuro / Ebano)
+    lightgray: "#3c342a",   // Bordi (Legno venato)
+    gray: "#8c7d6b",        // Testo secondario (Corteccia)
+    darkgray: "#d9c8b3",    // Testo principale (Panna sporco / Crema)
+    dark: "#ece0d1",        // Titoli (Pergamena chiara)
+    secondary: "#e6b450",   // Link (Ambra calda)
+    tertiary: "#d2691e",    // Accento (Rame / Cioccolato)
+    highlight: "rgba(230, 180, 80, 0.15)", // Evidenziatore
+  },
+}
         },
       },
     },
