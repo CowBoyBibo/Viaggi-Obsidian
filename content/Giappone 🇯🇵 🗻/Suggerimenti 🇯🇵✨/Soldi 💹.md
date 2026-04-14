@@ -10,7 +10,7 @@ Non farti fregare da chi dice che "ormai si paga tutto con carta", La realtà è
 
 - **Grandi magazzini e Catene:** Carta di credito/Apple Pay ovunque.
     
-- **Conbini e Distributori:** Suica o IC Card (il top della comodità).
+- **Conbini e Distributori:** IC Card (il top della comodità).
     
 - **Posti "Marci", Templi e zone rurali:** Solo **Contanti**.
   Se vai a Narai-juku o in una bettola di Kyoto, senza contanti non mangi...
