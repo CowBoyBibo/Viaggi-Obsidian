@@ -13,12 +13,15 @@ title: "Archive of my Journey"
 -  [[Marzo 2025 💻]] 
     
 -  [[Marzo 2026 🏯]] 
+	
 
 ## ✨Suggerimenti 🇯🇵
 - [[Cibo 🍜]] - _Tipico e tradizionale_
 	
 - [[Gite ⛩️]] - _Vicino Tokyo e non_
 	
+- [[Soldi 💹]] - _Carte, contanti e IC Card_
+	  
 - [[BOOKOFF💻 & Hareruya🃏]] - _"Used" & TCG_
 	
 - [[Sentō & Onsen ♨️]] - _Dedicati una coccola durante il tuo viaggio_ 
