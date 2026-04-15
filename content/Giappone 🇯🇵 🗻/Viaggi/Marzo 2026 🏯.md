@@ -1,6 +1,6 @@
 # Periodo 02/03/2026 - 19/03/2026  
 # Volo
-- 1.491,64 2 Persone (745,82€) [Cathay Pacific](https://www.cathaypacific.com/cx/it_IT.html)
+- 1.491,64€ 2 Persone (745,82€) [Cathay Pacific](https://www.cathaypacific.com/cx/it_IT.html)
 
 - 02/03 11:55 MXP - 03/03 06:30 HKG 11H35
 - 03/03 10:45 HKG - 03/03 15:15 KIX   03H30
