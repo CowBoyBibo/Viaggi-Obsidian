@@ -69,7 +69,7 @@ Se spendi più di **5.000 yen** nello stesso negozio (e ha il logo Tax-Free), ha
 Se vuoi collezionarle tutte (Suica, Pasmo, Icoca, Kitaca, Sugoca...), la fisica è l'unica via.
 Ma ricaricarle è un incubo medievale.
 
-> [!warning] Ricaricare la carta fisica significa dover avere sempre **contante** in tasca, fare la fila alle macchinette (che spesso sono in giapponese stretto o inglese stentato) e gestire i resti.  Se sei in ritardo per uno Shinkansen e hai la carta vuota, ricaricarla fisicamente ti fa perdere il treno, sul telefono, lo fai mentre corri verso il binario.
+> [!warning] Ricaricare la carta fisica significa dover avere sempre contante in tasca, fare la fila alle macchinette (che spesso sono in giapponese stretto o inglese stentato) e gestire i resti.  Se sei in ritardo per uno Shinkansen e hai la carta vuota, ricaricarla fisicamente ti fa perdere il treno, sul telefono, lo fai mentre corri verso il binario.
 
 ### 💡 La strategia "Hybrid" 
 
