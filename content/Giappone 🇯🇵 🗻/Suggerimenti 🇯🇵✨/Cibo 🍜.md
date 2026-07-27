@@ -39,6 +39,10 @@ In questa mappa segno i punti esatti dove ho mangiato bene, _quelli con l'icona 
 > [!tip] Un consiglio per te
 > Non farti paranoie per la lingua. In questi posti "marci" spesso non sanno una parola di inglese, ma basta un "Kore, kudasai" (questo, per favore) indicando il piatto di qualcuno o una foto. Fine. La pancia ringrazierà.
 
+## [Omurice](https://maps.app.goo.gl/pQ8aGSVYvrcyWPhJ7) vicino alla stazione di #Takadanobaba
+![[Omurice.jpeg|400]]
+
+
 ## [Ravioli](https://maps.app.goo.gl/YGekXw4RGC5omnWV6) vicino alla stazione di #Higashi-Nakano
 ![[Ravioli.jpg|400]]
 
