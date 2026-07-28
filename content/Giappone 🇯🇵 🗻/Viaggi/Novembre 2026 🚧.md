@@ -10,9 +10,9 @@
 
 # Alloggi
 
-| Città | Prezzo | Link | Date |
-| :---- | -----: | :--- | :--- |
-| ///   |   ///€ | ///  | ///  |
+| Città          |    Prezzo | Link                                                                                                                       | Date             |
+| :------------- | --------: | :------------------------------------------------------------------------------------------------------------------------- | :--------------- |
+| Higashi Nakano | 1.491,93€ | [Leisure Hotel II 3F](https://www.airbnb.it/rooms/1720147507809424893?source_impression_id=p3_1785229972_P3FnjAya6F5smACc) | 02/11-20/11 (18) |
 
 
 # Itinerario
@@ -52,7 +52,7 @@
 | Categoria     |    Prezzo |
 | ------------- | --------: |
 | Volo          | 1,353.50€ |
-| Alloggi       |        0€ |
+| Alloggio      | 1,491.93€ |
 | Generali      |        0€ |
 | Parcheggio    |        0€ |
 | Assicurazione |        0€ |
