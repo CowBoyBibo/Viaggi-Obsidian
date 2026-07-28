@@ -16,26 +16,79 @@
 
 
 # Itinerario
-- GIORNO 
+- GIORNO 01/11
+	- Partenza da MXP alle 11:30
+---
+- GIORNO 02/11
+	- Arrivo a NRT alle 13:40
 	- 
 ---
-
-
-# PARCHEGGIO AEROPORTO
-  ///€  [P6 Smart](https://www.milanairports-shop.com/it/parcheggi/parcheggi-malpensa)
-  
+- GIORNO 03/11
+	- 
+---
+- GIORNO 04/11
+	- 
+---
+- GIORNO 05/11
+	- 
+---
+- GIORNO 06/11
+	- 
+---
+- GIORNO 07/11
+	- 
+---
+- GIORNO 08/11
+	- 
+---
+- GIORNO 09/11
+	- 
+---
+- GIORNO 10/11
+	- 
+---
+- GIORNO 11/11
+	- 
+---
+- GIORNO 12/11
+	- 
+---
+- GIORNO 13/11
+	- 
+---
+- GIORNO 14/11
+	- 
+---
+- GIORNO 15/11
+	- 
+---
+- GIORNO 16/11
+	- 
+---
+- GIORNO 17/11
+	- 
+---
+- GIORNO 18/11
+	- 
+---
+- GIORNO 19/11
+	- 
+---
+- GIORNO 20/11
+	- 
+	- Rientro da NRT alle 19:30
+---
 
 
 # ASSICURAZIONE
 ///€ 2 Persone  [Heymondo Assicurazioni](https://heymondo.it/)
  
 
-
 # REVOLUT
 
-| Euro |     | Yen |
-| ---: | :-: | --: |
-|    € |     |   ¥ |
+| Euro | <-\|=\|-> | Yen |
+| ---: | :-------: | --: |
+|    € |           |   ¥ |
 
 
 # E-SIM
@@ -54,7 +107,6 @@
 | Volo          | 1,353.50€ |
 | Alloggio      | 1,491.93€ |
 | Generali      |        0€ |
-| Parcheggio    |        0€ |
 | Assicurazione |        0€ |
 | e-Sim         |        0€ |
 | **TOTALE**    |   SUM^EUR |
