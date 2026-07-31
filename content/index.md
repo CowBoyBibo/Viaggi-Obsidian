@@ -14,6 +14,8 @@ title: "Archive of my Journey"
     
 -  [[Marzo 2026 🏯]] 
 	
+- [[Novembre 2026 🚧]]
+	
 
 ## ✨Suggerimenti 🇯🇵
 - [[Cibo 🍜]] - _Tipico e tradizionale_
