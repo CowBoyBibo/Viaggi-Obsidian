@@ -236,7 +236,7 @@ _(Perfette per giornate piovose, domeniche o momenti di stanchezza fisica)_
 
 
 # ASSICURAZIONE
-///€ 2 Persone  [Heymondo Assicurazioni](https://heymondo.it/)
+///€ 2 Persone  [Heymondo Assicurazioni](https://heymondo.it/)  20 GIORNI (01/11/2026 - 20/11/2026) 
  
 
 # REVOLUT
