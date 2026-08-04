@@ -2,12 +2,13 @@
 
 # Volo
 - 1.492,41€ A/R 3 Persone (497,47€) [AirChina](https://www.airchina.it/)
-
-- 28/02 12:30 MXP - 01/03 05:45 PEK 10H15
-- 01/03 9:15 PEK - 01/03 13:40 NRT   03H25
-
-- 13/03 19:30 NRT - 13/03 22:05 PVG  03H35
-- 14/03 01:45 PVG - 14/03 07:15 MXP  12H30
+	
+- Andata
+	- 28/02 12:30 MXP - 01/03 05:45 PEK 10H15
+	- 01/03 9:15 PEK - 01/03 13:40 NRT   03H25
+- Ritorno
+	- 13/03 19:30 NRT - 13/03 22:05 PVG  03H35
+	- 14/03 01:45 PVG - 14/03 07:15 MXP  12H30
 
 # Alloggio
 
