@@ -7,7 +7,7 @@
 	- 02/11 09:40 PVG - 02/11 13:40 NRT  03H30
 - Ritorno
 	- 20/11 19:30 NRT - 20/11 22:15 PVG  03H45
-	- 21/11 01:45 PVG - 19/03 07:40 MXP 12H30
+	- 21/11 01:45 PVG - 21/11 07:40 MXP 12H30
 
 # Alloggi
 
@@ -236,7 +236,8 @@ _(Perfette per giornate piovose, domeniche o momenti di stanchezza fisica)_
 
 
 # ASSICURAZIONE
-///€ 2 Persone  [Heymondo Assicurazioni](https://heymondo.it/)  20 GIORNI (01/11/2026 - 20/11/2026) 
+116,76€ 2 Persone  [Heymondo Assicurazioni](https://heymondo.it/)
+20 GIORNI (01/11/2026 - 20/11/2026) 
  
 
 # REVOLUT
@@ -257,15 +258,15 @@ _(Perfette per giornate piovose, domeniche o momenti di stanchezza fisica)_
 
 # Spese Totali
 
-| Categoria     |    Prezzo |
-| ------------- | --------: |
-| Volo          | 1,353.50€ |
-| Alloggio      | 1,491.93€ |
-| Generali      |        0€ |
-| Assicurazione |        0€ |
-| e-Sim         |        0€ |
-| **TOTALE**    |   SUM^EUR |
-|               |           |
+| Categoria     |      Prezzo |
+| ------------- | ----------: |
+| Volo          |   1,353.50€ |
+| Alloggio      |   1,491.93€ |
+| Generali      |          0€ |
+| Assicurazione |     116.76€ |
+| e-Sim         |          0€ |
+| **TOTALE**    | **SUM^EUR** |
+|               |             |
 
 
 
