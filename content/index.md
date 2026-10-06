@@ -11,6 +11,9 @@ title: "Archive of my Journey"
 
 ## 🚩 Itinerari 🇯🇵
 - [[Il Giro Classico (Golden Route) 🎌]]
+	  
+- [[Rotta Edo-Juku & Giappone Tradizionale ⛩️]]
+	  
 
 ## 🌸 Esplorazioni Giapponesi 🇯🇵
 -  [[Marzo 2025 💻]] 
@@ -23,7 +26,7 @@ title: "Archive of my Journey"
 ## ✨Suggerimenti 🇯🇵
 - [[Cibo 🍜]] - _Tipico e tradizionale_
 	
-- [[Gite ⛩️]] - _Vicino Tokyo e non_
+- [[Gite 🗾]] - _Vicino Tokyo e non_
 	
 - [[Soldi 💹]] - _Carte, contanti e IC Card_
 	  

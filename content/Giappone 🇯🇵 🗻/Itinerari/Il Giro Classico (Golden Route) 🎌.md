@@ -81,7 +81,7 @@ Kyoto è magica, ma i suoi autobus sono spesso saturi. Muoviti la mattina presto
 
 ---
 
-## 🚅 [[Gite ⛩️|Le Gite]] Fuori Porta (Imperdibili)
+## 🚅 [[Gite 🗾|Le Gite]] Fuori Porta (Imperdibili)
 
 Se hai giorni in più da spendere, aggiungi questi moduli:
 
