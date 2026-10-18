@@ -1,0 +1,34 @@
+name: Update Google Maps Stats
+
+on:
+  schedule:
+    # Esegue lo script ogni domenica a mezzanotte
+    - cron: '0 0 * * 0'
+  workflow_dispatch: # Permette anche l'avvio manuale da GitHub
+
+jobs:
+  update-stats:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/python-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
+
+      - name: Fetch Maps Stats
+        run: python scripts/update_maps.py
+
+      - name: Commit and Push if changed
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add content/data/maps_stats.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "update: statistiche Google Maps" && git push)
