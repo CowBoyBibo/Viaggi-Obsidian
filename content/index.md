@@ -5,11 +5,14 @@ title: "Archive of my Journey"
 ![[copertina.jpg|697]]
 
 > [!quote] Questo è il mio archivio dei viaggi sulla mia _personalissima esperienza_...                  Spero possa tornarti utile
+> 
+
 
  
  ![[Mappa 🗺️]]
 
-## 🚩 Itinerari 🇯🇵
+
+## 🚩 Itinerari 🇯🇵 
 - [[Il Giro Classico (Golden Route) 🎌]]
 	  
 - [[Rotta Edo-Juku & Giappone Tradizionale ⛩️]]
