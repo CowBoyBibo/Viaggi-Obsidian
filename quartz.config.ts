@@ -18,7 +18,7 @@ const config: QuartzConfig = {
     },
     locale: "it-IT",
     baseUrl: "cowboybibo.github.io/Viaggi-Obsidian",
-    ignorePatterns: ["private", "templates", ".obsidian"],
+    ignorePatterns: ["private", "templates", ".obsidian", "data"],
     defaultDateType: "modified",
     theme: {
       fontOrigin: "googleFonts",
