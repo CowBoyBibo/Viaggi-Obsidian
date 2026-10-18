@@ -38,6 +38,7 @@ export const defaultContentPageLayout: PageLayout = {
       ],
     }),
     Component.Explorer(),
+    Component.LocalGuide(),
   ],
   right: [
     Component.Graph(),

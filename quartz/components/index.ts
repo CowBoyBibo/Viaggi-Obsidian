@@ -23,6 +23,7 @@ import Breadcrumbs from "./Breadcrumbs"
 import Comments from "./Comments"
 import Flex from "./Flex"
 import ConditionalRender from "./ConditionalRender"
+export { default as LocalGuide } from "./LocalGuide"
 
 export {
   ArticleTitle,
