@@ -230,7 +230,6 @@ _(Perfette per giornate piovose, domeniche o momenti di stanchezza fisica)_
 	- 
 ---
 - GIORNO 20/11
-	- 
 	- Rientro da NRT alle 19:30
 ---
 
