@@ -21,7 +21,7 @@
 
 _(Da fare esclusivamente con GIORNATE DI SOLE LIMPIDO)_
 
-### 1. LAGO KAWAGUCHIKO (MONTE FUJI)
+ 1. **LAGO KAWAGUCHIKO (MONTE FUJI)**
 
 - **Giorno ideale:** Infrasettimanale (Mar–Gio). **Evita il weekend** (code enormi e traffico).
     
@@ -39,7 +39,7 @@ _(Da fare esclusivamente con GIORNATE DI SOLE LIMPIDO)_
 - **Nota:** Prenotare il treno o bus diretto 30 giorni prima per assicurarsi il posto.
 
 
-### 2. KAMAKURA & ENOSHIMA
+ 2. **KAMAKURA & ENOSHIMA**
 
 - **Giorno ideale:** Infrasettimanale (Lun–Ven). Nel weekend è molto affollata dai local.
     
@@ -56,7 +56,7 @@ _(Da fare esclusivamente con GIORNATE DI SOLE LIMPIDO)_
 - **Focus:** Grande Buddha, tempio Hase-dera (bellissimo in autunno) e tramonto sul mare a Enoshima con vista sul Fuji.
 
 
-### 3. MONTE TAKAO (TAKAO-SAN)
+3. **MONTE TAKAO (TAKAO-SAN)**
 
 - **Giorno ideale:** Infrasettimanale (Lun–Ven). **EVITA ASSOLUTAMENTE IL WEEKEND** (è la montagna più scalata al mondo e a novembre la fila per la funivia può superare le 2 ore).
     
@@ -73,7 +73,7 @@ _(Da fare esclusivamente con GIORNATE DI SOLE LIMPIDO)_
 
 _(Da fare nei giorni feriali per evitare folle o mercati turistico-commerciali)_
 
-### 4. NIKKO (TEMPLI & CEDRI SECOLARI)
+4. **NIKKO (TEMPLI & CEDRI SECOLARI)**
 
 - **Giorno ideale:** Infrasettimanale (Mar–Gio).
     
@@ -89,7 +89,7 @@ _(Da fare nei giorni feriali per evitare folle o mercati turistico-commerciali)_
 - **Focus:** Santuario Toshogu (mausoleo dello Shogun) circondato da cedri imponenti e foglie autunnali oro e rosse.
 
 
-### 5. KAWAGOE ("LA PICCOLA EDO")
+ 5. **KAWAGOE ("LA PICCOLA EDO")**
 
 - **Giorno ideale:** **Martedì o Mercoledì**.
     
@@ -113,7 +113,7 @@ _(Da fare nei giorni feriali per evitare folle o mercati turistico-commerciali)_
 
 _(Perfette per giornate piovose, domeniche o momenti di stanchezza fisica)_
 
-### 6. HARERUYA TOURNAMENT CENTER (TAKADANOBABA)
+6. **HARERUYA TOURNAMENT CENTER (TAKADANOBABA)**
 
 - **Giorno ideale:** Qualsiasi giorno. Nel weekend ci sono più tornei e gente con cui giocare; nei feriali è più rilassante per comprare singole.
     
@@ -126,7 +126,7 @@ _(Perfette per giornate piovose, domeniche o momenti di stanchezza fisica)_
 - **Focus:** La mecca mondiale di Magic: The Gathering (300+ posti, pareti infiniti di carte singole).
 
 
-### 7. NAKANO BROADWAY
+ 7. **NAKANO BROADWAY**
 
 - **Giorno ideale:** Qualsiasi giorno **dopo le 12:00** (i negozi all'interno aprono tardi la mattina).
     
@@ -139,7 +139,7 @@ _(Perfette per giornate piovose, domeniche o momenti di stanchezza fisica)_
 - **Focus:** Mandarake (retrogaming, figure vintage, carte storiche, memorabilia).
 
 
-### 8. AKIHABARA (MTG & RETRO-SHOPPING)
+ 8. **AKIHABARA (MTG & RETRO-SHOPPING)**
 
 - **Giorno ideale:** Feriali per lo shopping rilassato. Domenica pomeriggio la via principale (_Chuo-dori_) diventa pedonale, carina da vedere ma più affollata.
     
@@ -156,7 +156,7 @@ _(Perfette per giornate piovose, domeniche o momenti di stanchezza fisica)_
     - **Cardrush / Amenity Dream / Hareruya Akihabara:** Tutte raggiungibili a piedi nei vicoli attorno a Chuo-dori.    
 
 
-### 9. RAID "BOOKOFF SUPER BAZAAR" (CAPANNONI FUORI CENTRO)
+ 9. **RAID "BOOKOFF SUPER BAZAAR" (CAPANNONI FUORI CENTRO)**
 
 - **Giorno ideale:** Perfetto nei **giorni di pioggia**.
     
