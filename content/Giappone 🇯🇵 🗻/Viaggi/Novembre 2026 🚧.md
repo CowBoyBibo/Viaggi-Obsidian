@@ -179,55 +179,55 @@ _(Perfette per giornate piovose, domeniche o momenti di stanchezza fisica)_
 	- 
 ---
 - GIORNO 03/11
-	- 
+	- 🚧
 ---
 - GIORNO 04/11
-	- 
+	- 🚧
 ---
 - GIORNO 05/11
-	- 
+	- 🚧
 ---
 - GIORNO 06/11
-	- 
+	- 🚧
 ---
 - GIORNO 07/11
-	- 
+	- 🚧
 ---
 - GIORNO 08/11
-	- 
+	- 🚧
 ---
 - GIORNO 09/11
-	- 
+	- 🚧
 ---
 - GIORNO 10/11
-	- 
+	- 🚧
 ---
 - GIORNO 11/11
-	- 
+	- 🚧
 ---
 - GIORNO 12/11
-	- 
+	- 🚧
 ---
 - GIORNO 13/11
-	- 
+	- 🚧
 ---
 - GIORNO 14/11
-	- 
+	- 🚧
 ---
 - GIORNO 15/11
-	- 
+	- 🚧
 ---
 - GIORNO 16/11
-	- 
+	- 🚧
 ---
 - GIORNO 17/11
-	- 
+	- 🚧
 ---
 - GIORNO 18/11
-	- 
+	- 🚧
 ---
 - GIORNO 19/11
-	- 
+	- 🚧
 ---
 - GIORNO 20/11
 	- Rientro da NRT alle 19:30
@@ -249,11 +249,11 @@ _(Perfette per giornate piovose, domeniche o momenti di stanchezza fisica)_
 # E-SIM
 2 e-Sim di [Saily](https://saily.com/it/coupon/)
 
-| Durata    |     Gb     | Prezzo |
-| :-------- | :--------: | -----: |
-| 30 Giorni |    ///     |     0$ |
-| 30 Giorni |    ///     |     0$ |
-|           | **Totale** |   0€** |
+| Durata    |     Gb     |  Prezzo |
+| :-------- | :--------: | ------: |
+| 30 Giorni |    ///     |   0.00€ |
+| 30 Giorni |    ///     |   0.00€ |
+|           | **Totale** | SUM^EUR |
 
 # Spese Totali
 
@@ -261,11 +261,10 @@ _(Perfette per giornate piovose, domeniche o momenti di stanchezza fisica)_
 | ------------- | ----------: |
 | Volo          |   1,353.50€ |
 | Alloggio      |   1,491.93€ |
-| Generali      |       0,00€ |
+| Generali      |       0.00€ |
 | Assicurazione |     116.76€ |
-| e-Sim         |       0,00€ |
+| e-Sim         |       0.00€ |
 | **TOTALE**    | **SUM^EUR** |
-|               |             |
 
 
 
