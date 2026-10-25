@@ -41,7 +41,7 @@
 # E-SIM
 3 e-Sim di [Saily](https://saily.com/it/coupon/)
   
-| Durata    |     Gb     |     Prezzo |
+| Durata    |     GB     |     Prezzo |
 |:--------- |:----------:| ----------:|
 | 30 Giorni |     20     |     22,49$ |
 | 30 Giorni |     5      |     10,99$ |

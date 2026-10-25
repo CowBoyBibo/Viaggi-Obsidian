@@ -241,18 +241,19 @@ _(Perfette per giornate piovose, domeniche o momenti di stanchezza fisica)_
 
 # REVOLUT
 
-| Euro | <-\|=\|-> | Yen |
-| ---: | :-------: | --: |
-|    € |           |   ¥ |
+|    Euro | <-\|=\|-> |         Yen |
+| ------: | :-------: | ----------: |
+| 732,97€ |    ->     | 129.160,00¥ |
+| 900,00€ |    ->     |        ,00¥ |
 
 
 # E-SIM
 2 e-Sim di [Saily](https://saily.com/it/coupon/)
 
-| Durata    |     Gb     |  Prezzo |
+| Durata    |     GB     |  Prezzo |
 | :-------- | :--------: | ------: |
-| 30 Giorni |    ///     |   0.00€ |
-| 30 Giorni |    ///     |   0.00€ |
+| 30 Giorni |     10     |   8.77€ |
+| 30 Giorni |     10     |   8.77€ |
 |           | **Totale** | SUM^EUR |
 
 # Spese Totali
@@ -263,7 +264,7 @@ _(Perfette per giornate piovose, domeniche o momenti di stanchezza fisica)_
 | Alloggio      |   1,491.93€ |
 | Generali      |       0.00€ |
 | Assicurazione |     116.76€ |
-| e-Sim         |       0.00€ |
+| e-Sim         |      17.54€ |
 | **TOTALE**    | **SUM^EUR** |
 
 
