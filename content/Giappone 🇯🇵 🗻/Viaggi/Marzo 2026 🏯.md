@@ -142,10 +142,10 @@
 2 e-Sim di [Saily](https://saily.com/it/coupon/)
 
 | Durata    |     GB     |     Prezzo |
-|:--------- |:----------:| ----------:|
+| :-------- | :--------: | ---------: |
 | 30 Giorni |     10     |     17,09$ |
 | 30 Giorni |     3      |      7,59$ |
-|           | **Totale** | **21,01€** |
+|           | **TOTALE** | **21,01€** |
 
 # Spese Totali
 
