@@ -1,11 +1,6 @@
 @use "./base.scss";
 
-/* ==========================================================================
-   Viaggi Obsidian — rifinitura visiva
-   Solo CSS: nessuna modifica al contenuto o ai componenti.
-   ========================================================================== */
 
-/* --- 1. Token -------------------------------------------------------------- */
 
 :root {
   --vo-radius: 10px;
@@ -393,7 +388,8 @@ article td a:hover {
   line-height: 1.5;
 }
 
-article table {
+.table-container > table {
+  display: table;
   width: 100%;
   margin: 1.5rem 0;
   border-collapse: collapse;
@@ -415,6 +411,13 @@ article td,
 article th {
   padding: 0.55em 0.7em;
   vertical-align: top;
+}
+
+/* Quartz impone min-width:75px a ogni cella: è la causa delle tabelle
+   tagliate su schermi stretti. Il wrapper .table-container resta scrollabile. */
+.table-container > table th,
+.table-container > table td {
+  min-width: 0;
 }
 
 article td {
@@ -599,12 +602,16 @@ footer {
     padding-left: 0.9rem;
   }
 
-  article table {
-    display: block;
-    overflow-x: auto;
-    overscroll-behavior-x: contain;
-    white-space: normal;
+  /* tabelle: colonne che si stringono, così stanno nella pagina
+     (se il contenuto è davvero troppo largo, scrolla .table-container) */
+  .table-container > table {
     font-size: 0.86em;
+    margin: 0.9rem 0;
+  }
+
+  .table-container > table th,
+  .table-container > table td {
+    padding: 0.45em 0.5em;
   }
 
   article iframe {
