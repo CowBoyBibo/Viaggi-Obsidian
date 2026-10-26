@@ -16,7 +16,7 @@ const config: QuartzConfig = {
     analytics: {
       provider: "umami",
       host: "https://cloud.umami.is",
-      websitedId:"<script defer src="https://cloud.umami.is/script.js" data-website-id="ba27eb1c-2c5d-459c-ac87-51cd8bbf9e47"></script>",
+      websitedId:"ba27eb1c-2c5d-459c-ac87-51cd8bbf9e47",
     },
     locale: "it-IT",
     baseUrl: "cowboybibo.github.io/Viaggi-Obsidian",
