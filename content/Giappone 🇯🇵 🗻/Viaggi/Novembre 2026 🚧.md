@@ -244,7 +244,8 @@ _(Perfette per giornate piovose, domeniche o momenti di stanchezza fisica)_
 |    Euro | <-\|=\|-> |         Yen |
 | ------: | :-------: | ----------: |
 | 732,97€ |    ->     | 129.160,00¥ |
-| 900,00€ |    ->     |        ,00¥ |
+| 900,00€ |    ->     | 157.964,00¥ |
+|         |           |             |
 
 
 # E-SIM
