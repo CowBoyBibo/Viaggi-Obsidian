@@ -14,7 +14,9 @@ const config: QuartzConfig = {
     enableSPA: true,
     enablePopovers: true,
     analytics: {
-      provider: "plausible",
+      provider: "umami",
+      host: "https://cloud.umami.is",
+      websiteId:"ba27eb1c-2c5d-459c-ac87-51cd8bbf9e47",
     },
     locale: "it-IT",
     baseUrl: "cowboybibo.github.io/Viaggi-Obsidian",
