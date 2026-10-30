@@ -1,0 +1,2887 @@
+/* ==========================================================================
+   ARCHIVE OF MY JOURNEY — WASHI / SUMI
+   Livello visivo additivo per la copia locale del blog Quartz.
+   Nessun file del repository originale viene modificato.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. Token — carta, inchiostro, vermiglio
+   -------------------------------------------------------------------------- */
+
+:root {
+  --tabi-bg: #f3ecde;
+  --tabi-bg-soft: #e8dcc7;
+  --tabi-card: #fbf5e9;
+  --tabi-card-2: #f7efdf;
+  --tabi-ink: #17130e;
+  --tabi-ink-2: #3e372d;
+  --tabi-muted: #776b59;
+  --tabi-line: rgb(23 19 14 / 14%);
+  --tabi-line-strong: rgb(23 19 14 / 38%);
+  --tabi-accent: #c53f28;
+  --tabi-accent-deep: #94301f;
+  --tabi-accent-soft: #efd3c9;
+  --tabi-gold: #9a7137;
+  --tabi-green: #4f6658;
+  --tabi-paper: #f3ecde;
+  --tabi-shadow: 0 1px 2px rgb(23 19 14 / 6%), 0 18px 44px -30px rgb(23 19 14 / 48%);
+  --tabi-ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+  --tabi-ease-in: cubic-bezier(0.6, 0.05, 0.25, 1);
+
+  --font-display: 'Fraunces', 'Iowan Old Style', 'Palatino Linotype', Palatino, Georgia, serif;
+  --font-body: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, 'Cascadia Code', Consolas, monospace;
+  --font-jp: 'Noto Serif JP', 'Yu Mincho', 'Hiragino Mincho ProN', 'MS Mincho', serif;
+
+  /* Ponte verso le variabili native di Quartz */
+  --light: var(--tabi-bg);
+  --lightgray: var(--tabi-bg-soft);
+  --gray: var(--tabi-muted);
+  --dark: var(--tabi-ink);
+  --darkgray: var(--tabi-ink-2);
+  --secondary: var(--tabi-accent);
+  --tertiary: var(--tabi-gold);
+  --highlight: color-mix(in srgb, var(--tabi-accent) 8%, transparent);
+  --textHighlight: color-mix(in srgb, var(--tabi-gold) 32%, transparent);
+  --pageBackground: var(--tabi-card);
+  --headerFont: var(--font-display);
+  --bodyFont: var(--font-body);
+  --codeFont: var(--font-mono);
+
+  color-scheme: light;
+}
+
+html[saved-theme='dark'] {
+  --tabi-bg: #0c0b09;
+  --tabi-bg-soft: #16120d;
+  --tabi-card: #13100c;
+  --tabi-card-2: #191510;
+  --tabi-ink: #f4eee1;
+  --tabi-ink-2: #d0c5b3;
+  --tabi-muted: #8e8372;
+  --tabi-line: rgb(244 238 225 / 14%);
+  --tabi-line-strong: rgb(244 238 225 / 36%);
+  --tabi-accent: #e45a3f;
+  --tabi-accent-deep: #f07a62;
+  --tabi-accent-soft: #321a14;
+  --tabi-gold: #d8b26e;
+  --tabi-green: #8aa792;
+  --tabi-paper: #0c0b09;
+  --tabi-shadow: 0 1px 2px rgb(0 0 0 / 45%), 0 24px 60px -32px rgb(0 0 0 / 90%);
+
+  --light: var(--tabi-bg);
+  --lightgray: var(--tabi-bg-soft);
+  --gray: var(--tabi-muted);
+  --dark: var(--tabi-ink);
+  --darkgray: var(--tabi-ink-2);
+  --secondary: var(--tabi-accent);
+  --tertiary: var(--tabi-gold);
+  --highlight: color-mix(in srgb, var(--tabi-accent) 14%, transparent);
+  --textHighlight: color-mix(in srgb, var(--tabi-gold) 24%, transparent);
+  --pageBackground: var(--tabi-card);
+
+  color-scheme: dark;
+}
+
+/* --------------------------------------------------------------------------
+   2. Carta, inchiostro, tipografia
+   -------------------------------------------------------------------------- */
+
+html {
+  background: var(--tabi-bg);
+  scroll-padding-top: 3rem;
+}
+
+body {
+  position: relative;
+  background:
+    radial-gradient(ellipse at 6% -4%, color-mix(in oklab, var(--tabi-accent) 7%, transparent), transparent 42rem),
+    radial-gradient(ellipse at 98% 8%, color-mix(in oklab, var(--tabi-gold) 7%, transparent), transparent 36rem),
+    var(--tabi-bg);
+  color: var(--tabi-ink-2);
+  font-family: var(--font-body);
+  font-size: 1.0625rem;
+  line-height: 1.78;
+  letter-spacing: -0.006em;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  transition: background-color 0.35s ease, color 0.35s ease;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 9998;
+  pointer-events: none;
+  opacity: 0.05;
+  mix-blend-mode: multiply;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='150'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.82' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.72'/%3E%3C/svg%3E");
+}
+
+html[saved-theme='dark'] body::before {
+  opacity: 0.07;
+  mix-blend-mode: screen;
+}
+
+/* --------------------------------------------------------------------------
+   3. Sfondo: il kanji 旅 sulla destra
+   -------------------------------------------------------------------------- */
+
+.tabi-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  color: var(--tabi-ink);
+  pointer-events: none;
+  transition: color 0.4s ease;
+}
+
+.tabi-backdrop__kanji {
+  position: absolute;
+  top: 50%;
+  right: -0.06em;
+  font-family: var(--font-jp);
+  font-size: clamp(17rem, 34vw, 36rem);
+  font-weight: 400;
+  line-height: 0.8;
+  opacity: 0.045;
+  transform: translateY(-52%);
+  mix-blend-mode: multiply;
+}
+
+html[saved-theme='dark'] .tabi-backdrop__kanji {
+  opacity: 0.06;
+  mix-blend-mode: screen;
+}
+
+@media (max-width: 800px) {
+  .tabi-backdrop__kanji {
+    right: -0.08em;
+    font-size: clamp(14rem, 60vw, 21rem);
+    opacity: 0.05;
+  }
+}
+
+@media (prefers-contrast: more) {
+  .tabi-backdrop {
+    display: none;
+  }
+}
+
+@media print {
+  .tabi-backdrop {
+    display: none;
+  }
+}
+
+::selection {
+  background: var(--tabi-accent);
+  color: var(--tabi-paper);
+}
+
+:focus-visible {
+  outline: 2px solid var(--tabi-accent);
+  outline-offset: 3px;
+  border-radius: 0;
+}
+
+a {
+  color: var(--tabi-ink);
+  font-weight: 500;
+  text-decoration: underline;
+  text-decoration-color: color-mix(in oklab, var(--tabi-accent) 38%, transparent);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+  transition: color 0.18s ease, text-decoration-color 0.18s ease, background-color 0.18s ease;
+}
+
+a:hover {
+  color: var(--tabi-accent);
+  text-decoration-color: var(--tabi-accent);
+}
+
+a.internal {
+  background-color: transparent;
+  border-radius: 0;
+  padding: 0;
+  text-decoration: underline;
+  text-decoration-color: color-mix(in oklab, var(--tabi-accent) 32%, transparent);
+}
+
+a.internal:hover {
+  text-decoration-color: var(--tabi-accent);
+}
+
+a.external .external-icon {
+  width: 0.72em;
+  height: 0.72em;
+  color: currentColor;
+}
+
+a.external .external-icon > path {
+  fill: currentColor;
+}
+
+p,
+li,
+td,
+th,
+a,
+tr,
+text {
+  color: inherit;
+}
+
+strong {
+  color: var(--tabi-ink);
+  font-weight: 600;
+}
+
+em {
+  font-style: italic;
+}
+
+code {
+  font-family: var(--font-mono);
+  font-size: 0.86em;
+  color: var(--tabi-ink);
+  background: var(--tabi-bg-soft);
+  border: 1px solid var(--tabi-line);
+  border-radius: 0;
+  padding: 0.08em 0.34em;
+}
+
+pre {
+  border: 1px solid var(--tabi-line);
+  border-radius: 0;
+  background: var(--tabi-card);
+}
+
+/* Transizione morbida quando si cambia tema */
+html.tabi-theme-transition body,
+html.tabi-theme-transition #quartz-body,
+html.tabi-theme-transition .sidebar,
+html.tabi-theme-transition .center,
+html.tabi-theme-transition .page-header,
+html.tabi-theme-transition article,
+html.tabi-theme-transition .callout,
+html.tabi-theme-transition .tabi-cover,
+html.tabi-theme-transition .tabi-ticker,
+html.tabi-theme-transition .toc,
+html.tabi-theme-transition footer {
+  transition: background-color 0.38s ease, color 0.38s ease, border-color 0.38s ease;
+}
+
+/* --------------------------------------------------------------------------
+   3. Struttura — rivista a tre colonne
+   -------------------------------------------------------------------------- */
+
+.page {
+  position: relative;
+  z-index: 1;
+  max-width: none;
+  margin: 0;
+}
+
+.page > #quartz-body {
+  max-width: 1420px;
+  margin-inline: auto;
+  padding: 0 clamp(1.25rem, 3vw, 3rem);
+  column-gap: clamp(1.75rem, 3vw, 3rem);
+  grid-template-columns: 255px minmax(0, 1fr) 245px;
+  align-items: start;
+}
+
+.center {
+  max-width: 780px;
+  min-width: 0;
+}
+
+/* Le pagine di archivio non hanno colonna destra: più spazio alla lista */
+html[data-tabi-page='listing'] .page > #quartz-body {
+  grid-template-columns: 255px minmax(0, 920px) 0;
+}
+
+html[data-tabi-page='listing'] .right.sidebar {
+  display: none;
+}
+
+/* --------------------------------------------------------------------------
+   4. Testata laterale — marchio, ricerca, comandi
+   -------------------------------------------------------------------------- */
+
+.sidebar {
+  padding-top: 2.1rem;
+  padding-bottom: 1.6rem;
+}
+
+.sidebar.left {
+  gap: 1.35rem;
+  scrollbar-width: none;
+}
+
+.sidebar.left::-webkit-scrollbar {
+  display: none;
+}
+
+.page-title {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 1.42rem;
+  font-weight: 500;
+  letter-spacing: -0.025em;
+  line-height: 1.02;
+}
+
+.page-title::before {
+  content: '旅';
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 2.05rem;
+  height: 2.05rem;
+  background: var(--tabi-accent);
+  color: #fbf5e9;
+  font-family: var(--font-jp);
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1;
+  transform: rotate(-2.5deg);
+  box-shadow: 2px 2px 0 color-mix(in srgb, var(--tabi-ink) 20%, transparent);
+  transition: transform 0.25s var(--tabi-ease), background-color 0.25s ease;
+}
+
+.page-title:hover::before {
+  transform: rotate(2deg) scale(1.04);
+}
+
+.page-title a {
+  color: var(--tabi-ink);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.page-title a:hover {
+  color: var(--tabi-ink);
+  text-decoration: none;
+}
+
+.tabi-brand-sub {
+  margin: -0.55rem 0 0 2.75rem;
+  color: var(--tabi-muted);
+  font-family: var(--font-mono);
+  font-size: 0.54rem;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.sidebar.left .flex-component {
+  gap: 0.5rem !important;
+}
+
+.search {
+  max-width: none;
+}
+
+.search > .search-button {
+  height: 2.35rem;
+  border: 1px solid var(--tabi-line);
+  border-radius: 0;
+  background: transparent;
+  padding: 0 0.7rem 0 0;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.search > .search-button:hover {
+  border-color: var(--tabi-ink);
+  background: color-mix(in srgb, var(--tabi-ink) 3%, transparent);
+}
+
+.search > .search-button p {
+  color: var(--tabi-muted);
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  font-weight: 400;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.search > .search-button svg {
+  width: 15px;
+  min-width: 15px;
+  margin: 0 0.55rem;
+}
+
+.search > .search-button svg .search-path {
+  stroke: var(--tabi-ink);
+  stroke-width: 1.4px;
+}
+
+/* Etichetta Washi / Sumi accanto al pulsante nativo */
+.tabi-theme-row {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.tabi-theme-label {
+  color: var(--tabi-muted);
+  font-family: var(--font-mono);
+  font-size: 0.52rem;
+  font-weight: 400;
+  letter-spacing: 0.16em;
+  line-height: 1;
+  text-transform: uppercase;
+  user-select: none;
+}
+
+.darkmode,
+.readermode {
+  display: grid;
+  place-items: center;
+  width: 2.15rem;
+  height: 2.15rem;
+  padding: 0;
+  border: 1px solid var(--tabi-line);
+  border-radius: 50%;
+  background: transparent;
+  color: var(--tabi-ink);
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.darkmode:hover,
+.readermode:hover {
+  background: var(--tabi-accent);
+  border-color: var(--tabi-accent);
+  color: #fbf5e9;
+}
+
+.darkmode svg,
+.readermode svg {
+  position: static;
+  width: 15px;
+  height: 15px;
+  fill: currentColor;
+  color: currentColor;
+}
+
+.readermode svg {
+  stroke: currentColor;
+}
+
+/* Con JS il widget originale resta nascosto fino alla sostituzione:
+   evita il lampo della vecchia scheda al primo paint. */
+html.js .local-guide-widget {
+  display: none !important;
+}
+
+/* La scheda Google Local Guide diventa un biglietto da visita */
+.local-guide-widget {
+  position: relative;
+  margin: 0.2rem 0 0 !important;
+  padding: 0.95rem 0.9rem 0.85rem !important;
+  border: 1px solid var(--tabi-line) !important;
+  border-left: 2px solid var(--tabi-accent) !important;
+  border-radius: 0 !important;
+  background:
+    linear-gradient(135deg, color-mix(in oklab, var(--tabi-gold) 7%, transparent), transparent 62%),
+    var(--tabi-card) !important;
+  box-shadow: var(--tabi-shadow);
+}
+
+.local-guide-widget > div:first-child {
+  margin-bottom: 0.65rem !important;
+}
+
+.local-guide-widget > div:first-child > span {
+  filter: grayscale(0.2);
+}
+
+.local-guide-widget > div:first-child > div > div:first-child {
+  font-family: var(--font-display) !important;
+  font-size: 0.98rem !important;
+  font-weight: 500 !important;
+  letter-spacing: -0.01em;
+}
+
+.local-guide-widget > div:first-child > div > div:last-child {
+  font-family: var(--font-mono) !important;
+  font-size: 0.5rem !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase;
+  color: var(--tabi-muted) !important;
+}
+
+.local-guide-widget > div:last-child {
+  background: var(--tabi-bg) !important;
+  border: 1px solid var(--tabi-line) !important;
+  border-radius: 0 !important;
+}
+
+.local-guide-widget > div:last-child > div > strong {
+  font-family: var(--font-display) !important;
+  font-weight: 500 !important;
+  color: var(--tabi-accent) !important;
+}
+
+.local-guide-widget > div:last-child > div > span {
+  font-family: var(--font-mono) !important;
+  font-size: 0.5rem !important;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+/* L'alternativa senza JS resta leggibile; con JS diventa un lasciapassare */
+.tabi-guide {
+  position: relative;
+  margin: 0.2rem 0 0;
+  padding: 0.8rem 1.4rem 0.7rem 0.78rem;
+  overflow: hidden;
+  border: 1px solid var(--tabi-line);
+  border-top: 2px solid var(--tabi-accent);
+  background:
+    linear-gradient(150deg, color-mix(in oklab, var(--tabi-gold) 9%, transparent), transparent 58%),
+    var(--tabi-card);
+  box-shadow: var(--tabi-shadow);
+}
+
+.tabi-guide::before {
+  content: '';
+  position: absolute;
+  inset: 0.3rem;
+  border: 1px solid color-mix(in oklab, var(--tabi-line) 65%, transparent);
+  pointer-events: none;
+}
+
+.tabi-guide__vertical {
+  position: absolute;
+  top: 0.72rem;
+  right: 0.38rem;
+  color: color-mix(in oklab, var(--tabi-accent) 62%, var(--tabi-muted));
+  font-family: var(--font-jp);
+  font-size: 0.48rem;
+  letter-spacing: 0.22em;
+  line-height: 1;
+  writing-mode: vertical-rl;
+  opacity: 0.85;
+}
+
+.tabi-guide__head {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  min-width: 0;
+}
+
+.tabi-guide__seal {
+  display: grid;
+  flex: none;
+  width: 2.45rem;
+  height: 2.45rem;
+  place-items: center;
+  background: var(--tabi-accent);
+  box-shadow: inset 0 0 0 1px rgb(247 239 226 / 32%);
+  color: #f7efe2;
+  font-family: var(--font-jp);
+  font-size: 1.26rem;
+  line-height: 1;
+  transform: rotate(-2.5deg);
+}
+
+.tabi-guide__identity {
+  min-width: 0;
+}
+
+.tabi-guide__kicker,
+.tabi-guide__title,
+.tabi-guide__role {
+  margin: 0;
+}
+
+.tabi-guide__kicker {
+  color: var(--tabi-accent);
+  font-family: var(--font-mono);
+  font-size: 0.4rem;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.tabi-guide__title {
+  margin-top: 0.1rem;
+  color: var(--tabi-ink);
+  font-family: var(--font-display);
+  font-size: 1.02rem;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  line-height: 1.05;
+}
+
+.tabi-guide__role {
+  margin-top: 0.16rem;
+  color: var(--tabi-muted);
+  font-family: var(--font-mono);
+  font-size: 0.36rem;
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.tabi-guide__stats {
+  margin: 0.66rem 0 0;
+  padding: 0.18rem 0 0;
+  border-top: 1px solid var(--tabi-line);
+}
+
+.tabi-guide__stat {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.27rem 0;
+  border-bottom: 1px solid var(--tabi-line);
+}
+
+.tabi-guide__stat:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.tabi-guide__stat dd {
+  margin: 0;
+  color: var(--tabi-accent);
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-variant-numeric: tabular-nums;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.tabi-guide__stat dt {
+  margin: 0;
+  color: var(--tabi-muted);
+  font-family: var(--font-mono);
+  font-size: 0.4rem;
+  letter-spacing: 0.1em;
+  line-height: 1.4;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+/* --------------------------------------------------------------------------
+   5. Esplora — indice del diario
+   -------------------------------------------------------------------------- */
+
+.explorer {
+  font-size: 0.9rem;
+}
+
+.explorer button.desktop-explorer,
+.explorer button.mobile-explorer {
+  color: var(--tabi-ink);
+}
+
+.explorer button.desktop-explorer h2,
+.explorer button.mobile-explorer h2 {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--tabi-muted);
+}
+
+.explorer button.desktop-explorer h2::before {
+  content: '';
+  display: inline-block;
+  width: 1.35rem;
+  height: 1px;
+  margin-right: 0.55rem;
+  background: var(--tabi-accent);
+  vertical-align: middle;
+}
+
+.explorer .explorer-content {
+  margin-top: 0.7rem;
+}
+
+.explorer .explorer-content ul {
+  padding-left: 0;
+}
+
+.explorer .explorer-content li > a {
+  display: inline-block;
+  padding: 0.2rem 0;
+  color: var(--tabi-ink-2);
+  font-size: 0.84rem;
+  font-weight: 400;
+  line-height: 1.45;
+  opacity: 0.82;
+  text-decoration: none;
+  transition: color 0.18s ease, transform 0.18s ease, opacity 0.18s ease;
+}
+
+.explorer .explorer-content li > a:hover {
+  color: var(--tabi-accent);
+  opacity: 1;
+  transform: translateX(3px);
+}
+
+.explorer .explorer-content li > a.active {
+  color: var(--tabi-accent);
+  opacity: 1;
+  font-weight: 500;
+}
+
+.explorer .explorer-content li > a.active::before {
+  content: '';
+  display: inline-block;
+  width: 0.3rem;
+  height: 0.3rem;
+  margin-right: 0.38rem;
+  background: var(--tabi-accent);
+  vertical-align: 0.12em;
+}
+
+.explorer .folder-container div > a,
+.explorer .folder-container div > button span {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  color: var(--tabi-ink);
+  text-decoration: none;
+  opacity: 1;
+}
+
+.explorer .folder-container div > a:hover,
+.explorer .folder-container div > button:hover span {
+  color: var(--tabi-accent);
+}
+
+.explorer .folder-icon {
+  color: var(--tabi-accent);
+  opacity: 0.8;
+}
+
+.explorer .folder-outer > ul {
+  margin-left: 0.28rem;
+  padding-left: 0.85rem;
+  border-left: 1px solid var(--tabi-line);
+}
+
+.explorer .explorer-content .explorer-ul > li > a {
+  font-size: 0.85rem;
+}
+
+/* --------------------------------------------------------------------------
+   6. Colonna destra — mappa, indice, rimandi
+   -------------------------------------------------------------------------- */
+
+.sidebar.right {
+  gap: 1.7rem;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+
+.sidebar.right::-webkit-scrollbar {
+  display: none;
+}
+
+/* La vista grafico di Quartz non serve alla lettura: via, e l'indice sale. */
+.sidebar.right .graph {
+  display: none;
+}
+
+.graph > h3,
+.toc button.toc-header h3,
+.backlinks > h3 {
+  margin: 0;
+  color: var(--tabi-muted);
+  font-family: var(--font-mono);
+  font-size: 0.56rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.graph > h3::before,
+.toc button.toc-header h3::before,
+.backlinks > h3::before {
+  content: '';
+  display: inline-block;
+  width: 0.32rem;
+  height: 0.32rem;
+  margin-right: 0.45rem;
+  background: var(--tabi-accent);
+  vertical-align: 0.08em;
+}
+
+.graph > .graph-outer {
+  height: 210px;
+  margin-top: 0.6rem;
+  border: 1px solid var(--tabi-line);
+  border-radius: 0;
+  background:
+    linear-gradient(var(--tabi-line) 1px, transparent 1px) 0 0 / 100% 24px,
+    linear-gradient(90deg, var(--tabi-line) 1px, transparent 1px) 0 0 / 24px 100%,
+    var(--tabi-card);
+  box-shadow: inset 0 0 0 4px var(--tabi-card), inset 0 0 0 5px var(--tabi-line);
+}
+
+.graph > .graph-outer:hover {
+  border-color: var(--tabi-line-strong);
+}
+
+.graph .global-graph-icon {
+  color: var(--tabi-ink);
+  opacity: 0.45;
+}
+
+.graph .global-graph-icon:hover {
+  background: var(--tabi-bg-soft);
+  opacity: 1;
+}
+
+.graph .graph-container,
+.graph .graph-container canvas {
+  background: transparent;
+}
+
+.toc {
+  gap: 0.15rem;
+}
+
+.toc button.toc-header {
+  padding-bottom: 0.45rem;
+  border-bottom: 1px solid var(--tabi-line);
+}
+
+.toc button.toc-header .fold {
+  color: var(--tabi-accent);
+  opacity: 1;
+}
+
+.toc ul.toc-content.overflow {
+  margin-top: 0.55rem;
+  padding-left: 0;
+  border-left: 1px solid var(--tabi-line);
+}
+
+.toc ul.toc-content.overflow > li {
+  padding-left: 0 !important;
+}
+
+.toc ul.toc-content.overflow > li > a {
+  display: block;
+  padding: 0.28rem 0 0.28rem 0.75rem;
+  color: var(--tabi-muted);
+  font-size: 0.76rem;
+  font-weight: 400;
+  line-height: 1.42;
+  opacity: 1;
+  text-decoration: none;
+  border-left: 2px solid transparent;
+  margin-left: -1px;
+  transition: color 0.18s ease, border-color 0.18s ease, padding-left 0.18s ease;
+}
+
+.toc ul.toc-content.overflow > li > a:hover {
+  color: var(--tabi-ink);
+  border-left-color: var(--tabi-line-strong);
+}
+
+.toc ul.toc-content.overflow > li > a.in-view {
+  color: var(--tabi-accent);
+  border-left-color: var(--tabi-accent);
+  padding-left: 0.9rem;
+  opacity: 1;
+}
+
+.toc ul.toc-content.overflow .depth-1 > a {
+  font-size: 0.7rem;
+}
+
+.backlinks {
+  padding-top: 0.4rem;
+  border-top: 1px solid var(--tabi-line);
+}
+
+.backlinks ul {
+  margin: 0.55rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.backlinks ul li a {
+  font-size: 0.78rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--tabi-ink-2);
+  text-decoration: none;
+}
+
+.backlinks ul li a:hover {
+  color: var(--tabi-accent);
+}
+
+/* --------------------------------------------------------------------------
+   7. Intestazione pagina — kicker, titolo, meta, tag
+   -------------------------------------------------------------------------- */
+
+.page-header {
+  margin: 2.15rem 0 2.1rem;
+  padding: 0;
+  border: 0;
+}
+
+.page-header .popover-hint {
+  position: relative;
+}
+
+.breadcrumb-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.1rem;
+  margin-bottom: 1.1rem;
+  color: var(--tabi-muted);
+  font-family: var(--font-mono);
+  font-size: 0.58rem;
+  letter-spacing: 0.11em;
+  line-height: 1.6;
+  text-transform: uppercase;
+}
+
+.breadcrumb-element {
+  display: inline-flex;
+  align-items: center;
+}
+
+.breadcrumb-element p {
+  margin: 0;
+  color: var(--tabi-line-strong);
+}
+
+.breadcrumb-element a {
+  color: var(--tabi-muted);
+  font-weight: 400;
+  text-decoration: none;
+  transition: color 0.18s ease;
+}
+
+.breadcrumb-element a:hover {
+  color: var(--tabi-accent);
+}
+
+.tabi-kicker {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem 1rem;
+  margin-bottom: 1rem;
+  color: var(--tabi-muted);
+  font-family: var(--font-mono);
+  font-size: 0.56rem;
+  letter-spacing: 0.18em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.tabi-kicker > span:first-child {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.tabi-kicker > span:first-child::before {
+  content: '';
+  display: inline-block;
+  width: 1.5rem;
+  height: 1px;
+  background: var(--tabi-accent);
+}
+
+h1.article-title {
+  max-width: 14ch;
+  margin: 0;
+  color: var(--tabi-ink);
+  font-family: var(--font-display);
+  font-size: clamp(2.8rem, 4.6vw, 4.35rem);
+  font-weight: 400;
+  letter-spacing: -0.045em;
+  line-height: 0.98;
+  text-wrap: balance;
+  overflow-wrap: break-word;
+}
+
+h1.article-title em {
+  color: var(--tabi-accent);
+  font-weight: 400;
+}
+
+.tabi-page-meta,
+.tabi-hero-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem 1.15rem;
+  margin-top: 1.25rem;
+  color: var(--tabi-muted);
+  font-family: var(--font-mono);
+  font-size: 0.57rem;
+  letter-spacing: 0.13em;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.tabi-page-meta > span,
+.tabi-hero-meta > span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.tabi-page-meta > span + span::before,
+.tabi-hero-meta > span + span::before {
+  content: '';
+  display: inline-block;
+  width: 0.24rem;
+  height: 0.24rem;
+  background: var(--tabi-accent);
+  transform: rotate(45deg);
+}
+
+.tabi-page-meta b,
+.tabi-hero-meta b {
+  color: var(--tabi-ink);
+  font-weight: 500;
+}
+
+.tabi-hero-jp {
+  position: absolute;
+  top: 3.45rem;
+  right: 0;
+  color: var(--tabi-muted);
+  font-family: var(--font-jp);
+  font-size: 0.7rem;
+  letter-spacing: 0.42em;
+  line-height: 1;
+  writing-mode: vertical-rl;
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.38rem;
+  margin: 1.25rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tags::before {
+  content: 'Temi';
+  align-self: center;
+  margin-right: 0.35rem;
+  color: var(--tabi-muted);
+  font-family: var(--font-mono);
+  font-size: 0.52rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.tags li {
+  margin: 0;
+}
+
+.tags a.tag-link {
+  display: inline-block;
+  padding: 0.2rem 0.52rem;
+  border: 1px solid var(--tabi-line);
+  border-radius: 0;
+  background: transparent;
+  color: var(--tabi-ink-2);
+  font-family: var(--font-mono);
+  font-size: 0.56rem;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  line-height: 1.5;
+  text-decoration: none;
+  transition: color 0.18s ease, border-color 0.18s ease, background-color 0.18s ease;
+}
+
+.tags a.tag-link::before {
+  color: var(--tabi-accent);
+}
+
+.tags a.tag-link:hover {
+  border-color: var(--tabi-accent);
+  background: var(--tabi-accent);
+  color: #fbf5e9;
+}
+
+.tags a.tag-link:hover::before {
+  color: #fbf5e9;
+}
+
+/* --------------------------------------------------------------------------
+   8. Home — copertina, timbro, ticker, sommario
+   -------------------------------------------------------------------------- */
+
+.tabi-home h1.article-title {
+  max-width: 11ch;
+  font-size: clamp(3.3rem, 6.5vw, 5.7rem);
+  line-height: 0.92;
+  letter-spacing: -0.05em;
+}
+
+.tabi-home .page-header {
+  margin-bottom: 1.8rem;
+}
+
+.tabi-cover {
+  position: relative;
+  margin: 1.4rem 0 1.1rem;
+  padding: 0;
+  isolation: isolate;
+}
+
+.tabi-cover img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--tabi-ink);
+  border-radius: 0;
+  box-shadow:
+    12px 12px 0 -1px var(--tabi-bg),
+    12px 12px 0 0 var(--tabi-accent);
+  filter: saturate(0.94) contrast(1.02);
+  transition: filter 0.5s ease, transform 0.8s var(--tabi-ease);
+}
+
+html[saved-theme='dark'] .tabi-cover img {
+  filter: saturate(0.86) contrast(1.04) brightness(0.88);
+}
+
+.tabi-cover:hover img {
+  filter: saturate(1) contrast(1.04);
+}
+
+.tabi-cover-label {
+  position: absolute;
+  bottom: 1.1rem;
+  left: 1.1rem;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0.6rem;
+  background: var(--tabi-card);
+  border-left: 2px solid var(--tabi-accent);
+  color: var(--tabi-ink);
+  font-family: var(--font-mono);
+  font-size: 0.52rem;
+  letter-spacing: 0.14em;
+  line-height: 1;
+  text-transform: uppercase;
+  box-shadow: 0 8px 18px -12px rgb(23 19 14 / 60%);
+}
+
+.tabi-stamp {
+  position: absolute;
+  top: 1.1rem;
+  right: 1.1rem;
+  z-index: 2;
+  display: grid;
+  place-items: center;
+  width: 3.2rem;
+  height: 3.2rem;
+  background: var(--tabi-accent);
+  color: #fbf5e9;
+  font-family: var(--font-jp);
+  font-size: 1.15rem;
+  font-weight: 600;
+  line-height: 1;
+  transform: rotate(4deg);
+  box-shadow: 0 8px 20px -12px rgb(23 19 14 / 70%);
+  pointer-events: none;
+}
+
+.tabi-cover-caption {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 1.55rem;
+  padding-top: 0.55rem;
+  border-top: 1px solid var(--tabi-line);
+  color: var(--tabi-muted);
+  font-family: var(--font-mono);
+  font-size: 0.52rem;
+  letter-spacing: 0.12em;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.tabi-cover-caption span:last-child {
+  color: var(--tabi-accent);
+}
+
+/* Ticker */
+.tabi-ticker {
+  position: relative;
+  overflow: hidden;
+  margin: 1.9rem 0 2.4rem;
+  border-top: 1px solid var(--tabi-ink);
+  border-bottom: 1px solid var(--tabi-ink);
+  background: var(--tabi-ink);
+  color: var(--tabi-bg);
+}
+
+.tabi-ticker__track {
+  display: flex;
+  width: max-content;
+  animation: tabi-ticker 36s linear infinite;
+}
+
+.tabi-ticker:hover .tabi-ticker__track {
+  animation-play-state: paused;
+}
+
+.tabi-ticker__group {
+  display: flex;
+  flex: none;
+  align-items: center;
+  gap: 2.1rem;
+  padding: 0.62rem 2.1rem 0.62rem 0;
+  font-family: var(--font-display);
+  font-size: 1.02rem;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.tabi-ticker__group span {
+  display: inline-flex;
+  align-items: center;
+  gap: 2.1rem;
+  white-space: nowrap;
+}
+
+.tabi-ticker__group span::after {
+  content: '·';
+  color: var(--tabi-accent);
+  font-family: var(--font-body);
+  font-size: 1.2em;
+}
+
+@keyframes tabi-ticker {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* La citazione della home diventa un pull-quote */
+.tabi-home article > blockquote.callout.quote {
+  position: relative;
+  margin: 2.6rem 0 2.8rem;
+  padding: 0.4rem 0 0.4rem 2rem;
+  border: 0;
+  border-left: 2px solid var(--tabi-accent);
+  border-radius: 0;
+  background: transparent !important;
+  box-shadow: none;
+}
+
+.tabi-home article > blockquote.callout.quote::before {
+  content: '“';
+  position: absolute;
+  top: -1.9rem;
+  left: -0.55rem;
+  color: var(--tabi-accent);
+  font-family: var(--font-display);
+  font-size: 7.5rem;
+  font-weight: 400;
+  line-height: 1;
+  opacity: 0.17;
+  pointer-events: none;
+}
+
+.tabi-home article > blockquote.callout.quote .callout-title {
+  display: block;
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+
+.tabi-home article > blockquote.callout.quote .callout-icon {
+  display: none;
+}
+
+.tabi-home article > blockquote.callout.quote .callout-title-inner > p {
+  margin: 0;
+  color: var(--tabi-ink);
+  font-family: var(--font-display);
+  font-size: clamp(1.55rem, 2.8vw, 2.3rem);
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: -0.025em;
+  line-height: 1.24;
+}
+
+/* Sezioni della home come sommario di rivista */
+.tabi-home article {
+  counter-reset: tabi-section;
+}
+
+.tabi-home article > h2 {
+  position: relative;
+  margin: 3.1rem 0 1.2rem;
+  padding-top: 1.15rem;
+  border-top: 1px solid var(--tabi-ink);
+  color: var(--tabi-ink);
+  font-family: var(--font-display);
+  font-size: clamp(1.9rem, 3.3vw, 2.8rem);
+  font-weight: 400;
+  letter-spacing: -0.035em;
+  line-height: 1.02;
+  counter-increment: tabi-section;
+}
+
+.tabi-home article > h2::before {
+  content: 'Sezione 0' counter(tabi-section);
+  position: absolute;
+  top: 0.4rem;
+  left: 0;
+  color: var(--tabi-accent);
+  font-family: var(--font-mono);
+  font-size: 0.53rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+/* Le liste della home diventano un indice numerato */
+.tabi-home article > ul {
+  margin: 1.1rem 0 2.2rem;
+  padding: 0;
+  border-top: 1px solid var(--tabi-line);
+  list-style: none;
+  counter-reset: tabi-index;
+}
+
+.tabi-home article > ul > li {
+  display: grid;
+  grid-template-columns: 2.5rem minmax(0, 1fr);
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid var(--tabi-line);
+  counter-increment: tabi-index;
+}
+
+.tabi-home article > ul > li::before {
+  content: counter(tabi-index, decimal-leading-zero);
+  padding-top: 1.15rem;
+  color: var(--tabi-accent);
+  font-family: var(--font-mono);
+  font-size: 0.58rem;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  line-height: 1.4;
+}
+
+.tabi-home article > ul > li > p {
+  position: relative;
+  margin: 0;
+  padding: 0.95rem 1.8rem 0.95rem 0;
+  line-height: 1.5;
+}
+
+.tabi-home article > ul > li > p > a {
+  color: var(--tabi-ink);
+  font-family: var(--font-display);
+  font-size: clamp(1.16rem, 1.8vw, 1.45rem);
+  font-weight: 500;
+  letter-spacing: -0.015em;
+  line-height: 1.25;
+  text-decoration: none;
+  transition: color 0.18s ease;
+}
+
+.tabi-home article > ul > li > p > a:hover {
+  color: var(--tabi-accent);
+}
+
+.tabi-home article > ul > li > p > em {
+  display: block;
+  margin-top: 0.18rem;
+  color: var(--tabi-muted);
+  font-family: var(--font-body);
+  font-size: 0.76rem;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  line-height: 1.5;
+}
+
+.tabi-home article > ul > li > p::after {
+  content: '→';
+  position: absolute;
+  right: 0.2rem;
+  top: 1.35rem;
+  color: var(--tabi-accent);
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  opacity: 0;
+  transform: translateX(-5px);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.tabi-home article > ul > li:hover > p::after {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* La mappa incorporata */
+.tabi-home article .transclude {
+  margin: 2.4rem 0 1.8rem;
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+
+.tabi-home article .transclude > h1 {
+  margin: 0 0 0.8rem;
+  font-family: var(--font-display);
+  font-size: 1.45rem;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+
+.tabi-home article .transclude iframe {
+  display: block;
+  width: 100% !important;
+  aspect-ratio: 16 / 9;
+  height: auto !important;
+  border: 1px solid var(--tabi-ink);
+  outline: 1px solid var(--tabi-line);
+  outline-offset: 5px;
+  filter: saturate(0.88) contrast(1.02);
+}
+
+html[saved-theme='dark'] .tabi-home article .transclude iframe {
+  filter: saturate(0.75) contrast(1.04) brightness(0.82);
+}
+
+.tabi-home article .transclude .transclude-src {
+  display: inline-block;
+  margin-top: 0.65rem;
+  color: var(--tabi-muted);
+  font-family: var(--font-mono);
+  font-size: 0.52rem;
+  letter-spacing: 0.14em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* --------------------------------------------------------------------------
+   9. Articolo — prosa, titoli, tabelle, callout, foto
+   -------------------------------------------------------------------------- */
+
+article {
+  color: var(--tabi-ink-2);
+  font-size: 1rem;
+  line-height: 1.82;
+}
+
+article > p,
+article > ul,
+article > ol,
+article > blockquote,
+article > .table-container,
+article > figure,
+article > hr {
+  max-width: 100%;
+}
+
+article p {
+  margin: 0 0 1.15em;
+}
+
+article > h1 {
+  margin: 3.3rem 0 1.1rem;
+  padding-top: 1.1rem;
+  border-top: 1px solid var(--tabi-line);
+  color: var(--tabi-ink);
+  font-family: var(--font-display);
+  font-size: clamp(1.75rem, 2.9vw, 2.35rem);
+  font-weight: 400;
+  letter-spacing: -0.03em;
+  line-height: 1.06;
+}
+
+article > h2 {
+  margin: 2.9rem 0 1rem;
+  color: var(--tabi-ink);
+  font-family: var(--font-display);
+  font-size: clamp(1.55rem, 2.4vw, 1.95rem);
+  font-weight: 400;
+  letter-spacing: -0.025em;
+  line-height: 1.1;
+}
+
+article > h3 {
+  margin: 2.1rem 0 0.75rem;
+  color: var(--tabi-ink);
+  font-family: var(--font-display);
+  font-size: clamp(1.15rem, 1.7vw, 1.36rem);
+  font-weight: 500;
+  letter-spacing: -0.012em;
+  line-height: 1.2;
+}
+
+article > h4,
+article > h5,
+article > h6 {
+  margin: 1.7rem 0 0.6rem;
+  color: var(--tabi-ink);
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+article h1 > a[role='anchor'],
+article h2 > a[role='anchor'],
+article h3 > a[role='anchor'],
+article h4 > a[role='anchor'] {
+  color: var(--tabi-accent);
+  opacity: 0;
+  transition: opacity 0.18s ease;
+}
+
+article h1:hover > a[role='anchor'],
+article h2:hover > a[role='anchor'],
+article h3:hover > a[role='anchor'],
+article h4:hover > a[role='anchor'] {
+  opacity: 0.9;
+}
+
+article ul,
+article ol {
+  margin: 0 0 1.25em;
+  padding-left: 1.35rem;
+}
+
+article li {
+  margin: 0.28em 0;
+  line-height: 1.72;
+}
+
+article li::marker {
+  color: var(--tabi-accent);
+}
+
+article ul ul,
+article ol ol,
+article ul ol,
+article ol ul {
+  margin-top: 0.25em;
+  margin-bottom: 0.25em;
+}
+
+article hr {
+  height: 1px;
+  margin: 2.9rem 0;
+  border: 0;
+  background: linear-gradient(90deg, var(--tabi-ink) 0 2.5rem, var(--tabi-line) 2.5rem 100%);
+}
+
+article blockquote:not(.callout) {
+  margin: 1.7rem 0;
+  padding: 0.2rem 0 0.2rem 1.3rem;
+  border-left: 2px solid var(--tabi-accent);
+  color: var(--tabi-ink);
+  font-family: var(--font-display);
+  font-size: 1.18rem;
+  font-style: italic;
+  line-height: 1.45;
+}
+
+/* Tabelle: registro da viaggio */
+.table-container {
+  margin: 1.8rem 0;
+  overflow-x: auto;
+  border-top: 1px solid var(--tabi-ink);
+  border-bottom: 1px solid var(--tabi-ink);
+  background: transparent;
+}
+
+.table-container > table {
+  width: 100%;
+  margin: 0;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+  line-height: 1.55;
+}
+
+.table-container > table th {
+  padding: 0.7rem 0.7rem;
+  border-bottom: 1px solid var(--tabi-line-strong);
+  background: transparent;
+  color: var(--tabi-muted);
+  font-family: var(--font-mono);
+  font-size: 0.57rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-align: left;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.table-container > table td {
+  min-width: 0;
+  padding: 0.7rem 0.7rem;
+  border-bottom: 1px solid var(--tabi-line);
+  vertical-align: top;
+}
+
+.table-container > table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.table-container > table tbody tr:hover td {
+  background: color-mix(in oklab, var(--tabi-accent) 4%, transparent);
+}
+
+.table-container > table strong {
+  font-weight: 600;
+}
+
+.tabi-table-hint {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  margin: -1.15rem 0 1.6rem;
+  color: var(--tabi-muted);
+  font-family: var(--font-mono);
+  font-size: 0.52rem;
+  letter-spacing: 0.16em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.tabi-table-hint span:last-child {
+  color: var(--tabi-accent);
+  font-size: 0.8rem;
+  letter-spacing: 0;
+}
+
+.tabi-table-hint[hidden] {
+  display: none;
+}
+
+/* Callout */
+.callout {
+  --tabi-callout: var(--tabi-accent);
+  margin: 1.8rem 0;
+  padding: 1rem 1.1rem;
+  border: 1px solid var(--tabi-line) !important;
+  border-left: 3px solid var(--tabi-callout) !important;
+  border-radius: 0 !important;
+  background: var(--tabi-card) !important;
+  box-shadow: var(--tabi-shadow);
+}
+
+.callout[data-callout='tip'],
+.callout[data-callout='success'],
+.callout[data-callout='info'] {
+  --tabi-callout: var(--tabi-green);
+}
+
+.callout[data-callout='danger'],
+.callout[data-callout='warning'],
+.callout[data-callout='failure'] {
+  --tabi-callout: var(--tabi-accent);
+}
+
+.callout[data-callout='example'],
+.callout[data-callout='note'] {
+  --tabi-callout: var(--tabi-gold);
+}
+
+.callout .callout-title {
+  gap: 0.55rem;
+  padding: 0;
+  color: var(--tabi-ink);
+}
+
+.callout .callout-title-inner {
+  color: var(--tabi-ink);
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  font-weight: 500;
+  letter-spacing: 0.13em;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.callout .callout-title-inner p {
+  margin: 0;
+}
+
+.callout .callout-icon {
+  color: var(--tabi-callout);
+}
+
+.callout .callout-content {
+  margin-top: 0.65rem;
+  color: var(--tabi-ink-2);
+  font-size: 0.94rem;
+  line-height: 1.72;
+}
+
+.callout .callout-content p:last-child {
+  margin-bottom: 0;
+}
+
+.callout .callout-content img {
+  width: 68px !important;
+  height: 68px;
+  border: 2px solid var(--tabi-accent);
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 6px 18px -12px rgb(23 19 14 / 70%);
+}
+
+/* Immagini e figure editoriali */
+article img {
+  max-width: 100%;
+  height: auto;
+  margin: 1rem 0;
+  border-radius: 0;
+  box-shadow: none;
+  /* Quartz usa content-visibility: auto sulle immagini: fuori schermo
+     collassano a 0px e spostano la pagina quando entrano nel viewport. */
+  content-visibility: visible;
+}
+
+article p > img:only-child {
+  display: block;
+  margin: 1.6rem 0;
+}
+
+.tabi-figure {
+  margin: 2.2rem 0 2.5rem;
+  padding: 0;
+}
+
+.tabi-figure__media {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--tabi-line-strong);
+  background: var(--tabi-bg-soft);
+  transform: perspective(900px) rotateX(var(--tabi-rx, 0deg)) rotateY(var(--tabi-ry, 0deg));
+  transition: transform 0.45s var(--tabi-ease), border-color 0.3s ease;
+  will-change: transform;
+}
+
+.tabi-figure__media:hover {
+  transition-duration: 0.08s;
+  border-color: var(--tabi-line-strong);
+}
+
+.tabi-figure__media::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--tabi-card) 55%, transparent);
+  pointer-events: none;
+}
+
+.tabi-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  transform: scale(1.001);
+  transition: transform 0.9s var(--tabi-ease), filter 0.5s ease;
+  content-visibility: visible;
+}
+
+.tabi-figure img.tabi-parallax {
+  transform: translate3d(0, var(--tabi-parallax-y, 0), 0) scale(1.055);
+}
+
+.tabi-figure:hover img {
+  transform: scale(1.035);
+}
+
+.tabi-figure:hover img.tabi-parallax {
+  transform: translate3d(0, var(--tabi-parallax-y, 0), 0) scale(1.08);
+}
+
+html[saved-theme='dark'] .tabi-figure img {
+  filter: saturate(0.88) contrast(1.03) brightness(0.9);
+}
+
+.tabi-figure.is-portrait {
+  max-width: 540px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Dittico: due foto nello stesso paragrafo restano appaiate, ma animate */
+.tabi-figure--duo .tabi-figure__pair {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.55rem;
+}
+
+.tabi-figure--duo .tabi-figure__media {
+  min-width: 0;
+}
+
+.tabi-figure--duo .tabi-figure__media img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.tabi-figure figcaption {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 0.6rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--tabi-line);
+  color: var(--tabi-muted);
+  font-family: var(--font-mono);
+  font-size: 0.54rem;
+  letter-spacing: 0.1em;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.tabi-figure figcaption b {
+  color: var(--tabi-accent);
+  font-weight: 500;
+}
+
+/* --------------------------------------------------------------------------
+   10. Pagine di archivio (cartelle e tag)
+   -------------------------------------------------------------------------- */
+
+.page-listing > p:first-child {
+  display: none;
+}
+
+.page-listing > div > ul.section-ul {
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--tabi-ink);
+  list-style: none;
+  counter-reset: tabi-listing;
+}
+
+.page-listing .section-li {
+  margin: 0;
+  border-bottom: 1px solid var(--tabi-line);
+  counter-increment: tabi-listing;
+  transition: background-color 0.2s ease;
+}
+
+.page-listing .section-li:hover {
+  background: color-mix(in oklab, var(--tabi-accent) 3.5%, transparent);
+}
+
+.page-listing .section-li > .section {
+  display: grid;
+  grid-template-columns: 6.2rem minmax(0, 1fr);
+  column-gap: 1.5rem;
+  padding: 1.35rem 0.4rem;
+  align-items: start;
+}
+
+.page-listing .section-li > .section::before {
+  content: counter(tabi-listing, decimal-leading-zero);
+  grid-column: 1;
+  grid-row: 1;
+  color: var(--tabi-accent);
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.08em;
+  line-height: 1.4;
+}
+
+.page-listing .section-li .meta {
+  display: none;
+  grid-column: 1;
+  grid-row: 2;
+  margin: 0.1rem 0 0;
+  color: var(--tabi-muted);
+  font-family: var(--font-mono);
+  font-size: 0.52rem;
+  letter-spacing: 0.04em;
+  line-height: 1.5;
+}
+
+.page-listing .section-li .desc {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.page-listing .section-li .desc h3 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(1.3rem, 2.2vw, 1.8rem);
+  font-weight: 400;
+  letter-spacing: -0.022em;
+  line-height: 1.14;
+}
+
+.page-listing .section-li .desc h3 a {
+  color: var(--tabi-ink);
+  text-decoration: none;
+}
+
+.page-listing .section-li .desc h3 a:hover {
+  color: var(--tabi-accent);
+}
+
+.page-listing .section-li .tags {
+  grid-column: 2;
+  grid-row: 2;
+  justify-content: flex-start;
+  margin: 0.6rem 0 0;
+}
+
+.page-listing .section-li .tags::before {
+  display: none;
+}
+
+.page-listing hr {
+  display: none;
+}
+
+/* --------------------------------------------------------------------------
+   11. Footer, progresso, ritorno su, cursore, sipario
+   -------------------------------------------------------------------------- */
+
+footer {
+  grid-area: grid-footer;
+  margin: 3.5rem 0 0;
+  padding: 1.3rem 0 2rem;
+  border-top: 1px solid var(--tabi-line);
+  color: var(--tabi-muted);
+  font-family: var(--font-mono);
+  font-size: 0.55rem;
+  letter-spacing: 0.12em;
+  line-height: 1.6;
+  text-transform: uppercase;
+}
+
+footer p {
+  position: relative;
+  margin: 0;
+  padding-left: 2rem;
+}
+
+footer p::before {
+  content: '旅';
+  position: absolute;
+  left: 0;
+  top: -0.12rem;
+  display: grid;
+  place-items: center;
+  width: 1.35rem;
+  height: 1.35rem;
+  background: var(--tabi-accent);
+  color: #fbf5e9;
+  font-family: var(--font-jp);
+  font-size: 0.58rem;
+  letter-spacing: 0;
+  transform: rotate(-2deg);
+}
+
+footer a {
+  color: var(--tabi-ink-2);
+  font-weight: 400;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--tabi-accent);
+}
+
+footer ul {
+  display: none;
+}
+
+.tabi-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  width: 100%;
+  height: 2px;
+  pointer-events: none;
+  background: transparent;
+}
+
+.tabi-progress span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: var(--tabi-accent);
+  transform: scaleX(var(--progress, 0));
+  transform-origin: left center;
+}
+
+.tabi-top {
+  position: fixed;
+  right: 1.2rem;
+  bottom: 1.2rem;
+  z-index: 9000;
+  display: grid;
+  place-items: center;
+  width: 2.55rem;
+  height: 2.55rem;
+  border: 1px solid var(--tabi-ink);
+  border-radius: 50%;
+  background: var(--tabi-bg);
+  color: var(--tabi-ink);
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  line-height: 1;
+  text-decoration: none;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(8px);
+  transition: opacity 0.25s ease, transform 0.25s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+.tabi-top.is-visible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.tabi-top:hover {
+  background: var(--tabi-accent);
+  border-color: var(--tabi-accent);
+  color: #fbf5e9;
+}
+
+.tabi-skip {
+  position: fixed;
+  top: 0.6rem;
+  left: 0.6rem;
+  z-index: 10002;
+  padding: 0.55rem 0.8rem;
+  background: var(--tabi-ink);
+  color: var(--tabi-bg);
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.12em;
+  text-decoration: none;
+  text-transform: uppercase;
+  transform: translateY(-180%);
+  transition: transform 0.2s ease;
+}
+
+.tabi-skip:focus {
+  transform: translateY(0);
+}
+
+.tabi-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9500;
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--tabi-accent);
+  border-radius: 50%;
+  pointer-events: none;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  transition: width 0.2s ease, height 0.2s ease, opacity 0.25s ease, background-color 0.2s ease;
+  mix-blend-mode: multiply;
+}
+
+html[saved-theme='dark'] .tabi-cursor {
+  mix-blend-mode: screen;
+}
+
+.tabi-cursor.is-active {
+  opacity: 0.65;
+}
+
+.tabi-cursor.is-hover {
+  width: 34px;
+  height: 34px;
+  background: color-mix(in oklab, var(--tabi-accent) 12%, transparent);
+  opacity: 0.9;
+}
+
+.tabi-curtain {
+  position: fixed;
+  inset: 0;
+  z-index: 10003;
+  display: grid;
+  place-items: center;
+  background: var(--tabi-ink);
+  color: var(--tabi-bg);
+  pointer-events: none;
+  animation: tabi-curtain-up 1.25s var(--tabi-ease) 0.15s both;
+}
+
+.tabi-curtain span {
+  font-family: var(--font-jp);
+  font-size: clamp(3rem, 9vw, 6.5rem);
+  line-height: 1;
+  opacity: 0.92;
+  animation: tabi-curtain-mark 0.7s var(--tabi-ease) both;
+}
+
+@keyframes tabi-curtain-mark {
+  from {
+    opacity: 0;
+    transform: scale(1.25) rotate(-6deg);
+    filter: blur(8px);
+  }
+  to {
+    opacity: 0.92;
+    transform: scale(1) rotate(0);
+    filter: blur(0);
+  }
+}
+
+@keyframes tabi-curtain-up {
+  0%,
+  55% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   12. Movimento — reveal, titoli, transizioni SPA
+   -------------------------------------------------------------------------- */
+
+html.js [data-tabi-reveal] {
+  opacity: 0;
+  translate: 0 26px;
+  transition:
+    opacity 0.8s var(--tabi-ease),
+    translate 0.8s var(--tabi-ease);
+  transition-delay: var(--tabi-delay, 0ms);
+}
+
+html.js [data-tabi-reveal].is-revealed {
+  opacity: 1;
+  translate: 0 0;
+}
+
+.tabi-split .word {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: top;
+  padding-bottom: 0.09em;
+  margin-bottom: -0.09em;
+}
+
+html.js .tabi-split .word__inner {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(112%) rotate(1.5deg);
+  transform-origin: left bottom;
+}
+
+html.js .tabi-split.is-in .word__inner {
+  animation: tabi-word-up 0.95s var(--tabi-ease) forwards;
+  animation-delay: calc(0.12s + var(--i, 0) * 0.055s);
+}
+
+@keyframes tabi-word-up {
+  to {
+    opacity: 1;
+    transform: translateY(0) rotate(0);
+  }
+}
+
+html.tabi-leaving .center {
+  opacity: 0.25;
+  translate: 0 8px;
+  transition: opacity 0.22s ease, translate 0.22s ease;
+}
+
+html.tabi-entering .center {
+  animation: tabi-page-in 0.55s var(--tabi-ease) both;
+}
+
+@keyframes tabi-page-in {
+  from {
+    opacity: 0;
+    translate: 0 12px;
+  }
+  to {
+    opacity: 1;
+    translate: 0 0;
+  }
+}
+
+/* Il nastro e i reveal restano fermi nelle catture */
+html.capture [data-tabi-reveal] {
+  opacity: 1 !important;
+  translate: none !important;
+  transition: none !important;
+}
+
+html.capture .tabi-split .word__inner {
+  opacity: 1 !important;
+  transform: none !important;
+  animation: none !important;
+}
+
+html.capture .tabi-ticker__track {
+  animation-play-state: paused;
+}
+
+html.capture .tabi-curtain,
+html.capture .tabi-cursor {
+  display: none !important;
+}
+
+/* --------------------------------------------------------------------------
+   13. Ricerca — pannello di carta
+   -------------------------------------------------------------------------- */
+
+.search > .search-container {
+  background: color-mix(in oklab, var(--tabi-ink) 32%, transparent);
+  backdrop-filter: blur(9px);
+}
+
+.search > .search-container .search-space {
+  width: min(760px, 88vw);
+  margin-top: 10vh;
+}
+
+.search > .search-container .search-space > * {
+  border-radius: 0;
+  background: var(--tabi-card);
+  box-shadow: var(--tabi-shadow);
+}
+
+.search > .search-container .search-space > input {
+  padding: 1rem 1.15rem;
+  border: 1px solid var(--tabi-ink);
+  background: var(--tabi-card);
+  color: var(--tabi-ink);
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  letter-spacing: -0.02em;
+}
+
+.search > .search-container .search-space > input::placeholder {
+  color: var(--tabi-muted);
+  opacity: 0.7;
+}
+
+.search > .search-container .search-layout {
+  border: 1px solid var(--tabi-line);
+}
+
+.search > .search-container .result-card {
+  padding: 1rem 1.15rem;
+  border-bottom: 1px solid var(--tabi-line);
+}
+
+.search > .search-container .result-card:hover,
+.search > .search-container .result-card:focus,
+.search > .search-container .result-card.focus {
+  background: var(--tabi-bg-soft);
+}
+
+.search > .search-container .result-card > h3 {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 500;
+  letter-spacing: -0.015em;
+}
+
+.search > .search-container .result-card > p.card-description {
+  color: var(--tabi-muted);
+  font-size: 0.78rem;
+}
+
+.search > .search-container .highlight {
+  background: color-mix(in oklab, var(--tabi-gold) 35%, transparent);
+  border-radius: 0;
+}
+
+/* --------------------------------------------------------------------------
+   14. Responsive
+   -------------------------------------------------------------------------- */
+
+@media (min-width: 1200px) and (max-width: 1360px) {
+  .page > #quartz-body {
+    grid-template-columns: 220px minmax(0, 1fr) 220px;
+    column-gap: 1.6rem;
+  }
+
+  html[data-tabi-page='listing'] .page > #quartz-body {
+    grid-template-columns: 220px minmax(0, 1fr) 0;
+  }
+
+  .page-title {
+    font-size: 1.22rem;
+  }
+
+  .tabi-brand-sub {
+    margin-left: 2.5rem;
+    font-size: 0.5rem;
+  }
+
+}
+
+@media (max-width: 1360px) {
+  .local-guide-widget,
+  .tabi-guide {
+    display: none;
+  }
+}
+
+@media (max-width: 1199px) {
+  .sidebar.right {
+    display: none;
+  }
+
+  .page > #quartz-body {
+    grid-template-columns: 225px minmax(0, 1fr);
+  }
+
+  html[data-tabi-page='listing'] .page > #quartz-body {
+    grid-template-columns: 225px minmax(0, 1fr);
+  }
+
+  .center {
+    max-width: 760px;
+  }
+}
+
+@media (max-width: 900px) {
+  .page > #quartz-body {
+    grid-template-columns: 200px minmax(0, 1fr);
+    column-gap: 1.2rem;
+  }
+
+  html[data-tabi-page='listing'] .page > #quartz-body {
+    grid-template-columns: 200px minmax(0, 1fr);
+  }
+
+  .local-guide-widget,
+  .tabi-guide {
+    display: none;
+  }
+
+  .tabi-theme-label {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  body {
+    font-size: 1rem;
+    line-height: 1.76;
+  }
+
+  .page > #quartz-body {
+    grid-template-columns: minmax(0, 1fr);
+    padding: 0 1.15rem;
+    row-gap: 0;
+    overflow-x: clip;
+  }
+
+  html[data-tabi-page='listing'] .page > #quartz-body {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  #quartz-body > * {
+    min-width: 0;
+  }
+
+  .sidebar.left {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.55rem;
+    height: auto;
+    margin: 0 -1.15rem;
+    padding: 0.62rem 1.15rem 0.7rem;
+    background: color-mix(in srgb, var(--tabi-bg) 90%, transparent);
+    border-bottom: 1px solid var(--tabi-line);
+    backdrop-filter: blur(14px) saturate(1.15);
+  }
+
+  .page-title {
+    font-size: 0.98rem;
+    gap: 0.5rem;
+  }
+
+  .page-title::before {
+    width: 1.65rem;
+    height: 1.65rem;
+    font-size: 0.76rem;
+  }
+
+  .tabi-brand-sub {
+    display: none;
+  }
+
+  .sidebar.left .flex-component {
+    gap: 0.3rem !important;
+  }
+
+  .search {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+
+  .search > .search-button {
+    height: 2rem;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    justify-content: flex-end;
+  }
+
+  .search > .search-button p {
+    display: none;
+  }
+
+  .search > .search-button svg {
+    margin: 0 0.3rem;
+  }
+
+  .darkmode,
+  .readermode {
+    width: 1.85rem;
+    height: 1.85rem;
+    border: 0;
+  }
+
+  .darkmode svg,
+  .readermode svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .tabi-theme-label {
+    display: none;
+  }
+
+  .page-header {
+    margin: 1.55rem 0 1.5rem;
+    padding: 0;
+  }
+
+  body[data-slug='index'] .page-header {
+    display: block;
+  }
+
+  .breadcrumb-container {
+    margin-bottom: 0.85rem;
+    font-size: 0.54rem;
+  }
+
+  .breadcrumb-element:last-child {
+    display: inline-flex;
+  }
+
+  .breadcrumb-element:nth-last-child(2) p {
+    display: inline;
+  }
+
+  h1.article-title {
+    max-width: 100%;
+    font-size: clamp(2rem, 9vw, 3rem);
+    line-height: 1.02;
+  }
+
+  .tabi-home h1.article-title {
+    max-width: 100%;
+    font-size: clamp(2.75rem, 12.6vw, 4rem);
+    line-height: 0.94;
+  }
+
+  .tabi-kicker {
+    margin-bottom: 0.8rem;
+    font-size: 0.52rem;
+  }
+
+  .tabi-page-meta,
+  .tabi-hero-meta {
+    gap: 0.35rem 0.75rem;
+    margin-top: 0.9rem;
+    font-size: 0.51rem;
+  }
+
+  .tabi-hero-jp {
+    display: none;
+  }
+
+  .tags {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 0.35rem;
+    scrollbar-width: none;
+  }
+
+  .tags::-webkit-scrollbar {
+    display: none;
+  }
+
+  .tags a.tag-link {
+    white-space: nowrap;
+    font-size: 0.52rem;
+  }
+
+  .tabi-cover {
+    margin-top: 0.8rem;
+  }
+
+  .tabi-cover img {
+    box-shadow:
+      7px 7px 0 -1px var(--tabi-bg),
+      7px 7px 0 0 var(--tabi-accent);
+  }
+
+  .tabi-cover-label {
+    bottom: 0.7rem;
+    left: 0.7rem;
+    font-size: 0.46rem;
+    padding: 0.28rem 0.45rem;
+  }
+
+  .tabi-stamp {
+    top: 0.7rem;
+    right: 0.7rem;
+    width: 2.4rem;
+    height: 2.4rem;
+    font-size: 0.9rem;
+  }
+
+  .tabi-cover-caption {
+    margin-top: 1.1rem;
+    font-size: 0.48rem;
+  }
+
+  .tabi-ticker {
+    margin: 1.4rem -1.15rem 1.8rem;
+  }
+
+  .tabi-ticker__group {
+    gap: 1.5rem;
+    padding: 0.55rem 1.5rem 0.55rem 0;
+    font-size: 0.92rem;
+  }
+
+  .tabi-ticker__group span {
+    gap: 1.5rem;
+  }
+
+  .tabi-home article > blockquote.callout.quote {
+    margin: 2rem 0;
+    padding-left: 1.25rem;
+  }
+
+  .tabi-home article > blockquote.callout.quote::before {
+    top: -1.2rem;
+    font-size: 5rem;
+  }
+
+  .tabi-home article > blockquote.callout.quote .callout-title-inner > p {
+    font-size: 1.38rem;
+  }
+
+  .tabi-home article > h2 {
+    margin-top: 2.4rem;
+    font-size: 1.85rem;
+  }
+
+  .tabi-home article > ul > li {
+    grid-template-columns: 1.8rem minmax(0, 1fr);
+  }
+
+  .tabi-home article > ul > li::before {
+    padding-top: 0.95rem;
+    font-size: 0.54rem;
+  }
+
+  .tabi-home article > ul > li > p {
+    padding: 0.8rem 1.1rem 0.8rem 0;
+  }
+
+  .tabi-home article > ul > li > p > a {
+    font-size: 1.12rem;
+  }
+
+  .tabi-home article > ul > li > p > em {
+    font-size: 0.72rem;
+  }
+
+  .tabi-home article > ul > li > p::after {
+    top: 1.12rem;
+    font-size: 0.85rem;
+  }
+
+  .tabi-home article .transclude iframe {
+    aspect-ratio: 4 / 3;
+  }
+
+  article {
+    font-size: 0.98rem;
+    line-height: 1.78;
+  }
+
+  article > h1 {
+    margin-top: 2.5rem;
+    font-size: 1.6rem;
+  }
+
+  article > h2 {
+    margin-top: 2.3rem;
+    font-size: 1.5rem;
+  }
+
+  article > h3 {
+    margin-top: 1.8rem;
+    font-size: 1.16rem;
+  }
+
+  article ul,
+  article ol {
+    padding-left: 1.15rem;
+  }
+
+  .table-container > table {
+    font-size: 0.82rem;
+  }
+
+  .table-container > table th,
+  .table-container > table td {
+    padding: 0.55rem 0.5rem;
+  }
+
+  .callout {
+    padding: 0.8rem 0.85rem;
+  }
+
+  .callout .callout-content div[style*='display:flex'] {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 0.6rem !important;
+  }
+
+  .callout .callout-content img {
+    width: 58px !important;
+    height: 58px;
+  }
+
+  .tabi-figure {
+    margin: 1.7rem 0 2rem;
+  }
+
+  .tabi-figure.is-portrait {
+    max-width: 100%;
+  }
+
+  .tabi-figure figcaption {
+    font-size: 0.49rem;
+  }
+
+  .page-listing .section-li > .section {
+    grid-template-columns: 1fr;
+    gap: 0.3rem;
+    padding: 1.1rem 0.2rem;
+  }
+
+  .page-listing .section-li > .section::before {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .page-listing .section-li .meta {
+    grid-column: 1;
+    grid-row: 3;
+    margin-top: 0.35rem;
+  }
+
+  .page-listing .section-li .desc {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .page-listing .section-li .tags {
+    grid-column: 1;
+    grid-row: 4;
+  }
+
+  .page-listing .section-li .desc h3 {
+    font-size: 1.35rem;
+  }
+
+  /* Il drawer Esplora */
+  .explorer .explorer-content {
+    left: -1.15rem;
+    padding: 3.6rem 1.35rem 2rem;
+    background: var(--tabi-bg);
+    background-image: radial-gradient(
+      ellipse at 100% 0%,
+      color-mix(in oklab, var(--tabi-accent) 7%, transparent),
+      transparent 30rem
+    );
+  }
+
+  .explorer .explorer-content::before {
+    content: '旅 · INDICE';
+    position: absolute;
+    top: 1.4rem;
+    left: 1.35rem;
+    color: var(--tabi-accent);
+    font-family: var(--font-mono);
+    font-size: 0.58rem;
+    letter-spacing: 0.2em;
+  }
+
+  .explorer .explorer-content ul.explorer-ul {
+    padding-top: 0.4rem;
+  }
+
+  .explorer .explorer-content li > a {
+    font-size: 1rem;
+    padding: 0.36rem 0;
+  }
+
+  .explorer .folder-container div > a,
+  .explorer .folder-container div > button span {
+    font-size: 1.28rem;
+  }
+
+  .explorer .folder-outer > ul {
+    padding-left: 0.9rem;
+  }
+
+  .explorer button.mobile-explorer {
+    width: 2rem;
+    height: 2rem;
+    justify-content: center;
+  }
+
+  .explorer button.mobile-explorer .lucide-menu {
+    width: 20px;
+    height: 20px;
+    stroke: var(--tabi-ink);
+  }
+
+  .sidebar.right {
+    display: none;
+  }
+
+  footer {
+    margin-top: 2.6rem;
+    font-size: 0.5rem;
+  }
+
+  .tabi-top {
+    right: 0.9rem;
+    bottom: 0.9rem;
+    width: 2.3rem;
+    height: 2.3rem;
+  }
+
+  .tabi-cursor {
+    display: none;
+  }
+}
+
+@media (max-width: 420px) {
+  .page-title {
+    font-size: 0.9rem;
+  }
+
+  .page-title::before {
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: 0.7rem;
+  }
+
+  .readermode {
+    display: none;
+  }
+
+  h1.article-title {
+    font-size: clamp(1.9rem, 8.6vw, 2.6rem);
+  }
+
+  .tabi-home h1.article-title {
+    font-size: clamp(2.55rem, 12vw, 3.4rem);
+  }
+}
+
+/* --------------------------------------------------------------------------
+   15. Accessibilità — movimento ridotto
+   -------------------------------------------------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  html.js [data-tabi-reveal] {
+    opacity: 1;
+    translate: none;
+  }
+
+  html.js .tabi-split .word__inner {
+    opacity: 1;
+    transform: none;
+  }
+
+  .tabi-cursor {
+    display: none;
+  }
+}
