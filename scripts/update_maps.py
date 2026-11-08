@@ -17,10 +17,10 @@ def fetch_local_guide_stats():
     # Dati di fallback
     stats = {
         "level": 5,
-        "views": "100k+",
-        "reviews": "17",
-        "photos": "38",
-        "points": "587"
+        "views": "110k+",
+        "reviews": "23",
+        "photos": "62",
+        "points": "852"
     }
 
     try:
