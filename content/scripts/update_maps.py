@@ -17,11 +17,11 @@ def fetch_local_guide_stats():
     
     # Dati reali presi dal tuo profilo
     stats = {
-        "level": 5,
-        "views": "100k+",
-        "reviews": "17",
-        "photos": "38",
-        "points": "567"
+        "level": 6,
+        "views": "150k+",
+        "reviews": "36",
+        "photos": "136",
+        "points": "1652"
     }
     
     try:
