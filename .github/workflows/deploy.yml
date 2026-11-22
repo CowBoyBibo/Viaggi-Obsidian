@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - v4
+    workflow_dispatch:  
 
 permissions:
   contents: read
@@ -28,6 +29,8 @@ jobs:
         run: npm ci
       - name: Build Quartz
         run: npx quartz build
+      - name: Apply Tabi theme
+        run: node tools/apply-tabi.mjs
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
