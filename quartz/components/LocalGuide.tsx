@@ -22,27 +22,16 @@ try {
   // Se durante il build non trova il file, usa i dati di riserva senza far fallire il sito
 }
 
-function formatDate(iso?: string): string | null {
-  if (!iso) return null
-  const d = new Date(iso)
-  if (isNaN(d.getTime())) return null
-  return d.toLocaleDateString("it-IT", {
-    day: "numeric",
-    month: "long",
-    year: "numeric",
-    timeZone: "UTC",
-  })
-}
-
 export const LocalGuide: QuartzComponent = () => {
-  const updated = formatDate(mapsData.updated)
-
   const stats = [
     { value: mapsData.contributions, label: "Contributi" },
     { value: mapsData.points, label: "Punti" },
     { value: mapsData.views, label: "Visualizzazioni" },
   ]
 
+  // ATTENZIONE: il tema Tabi (theme/tabi/theme.js) legge questa struttura:
+  // il PRIMO blocco è l'intestazione, l'ULTIMO blocco è la griglia dei numeri.
+  // Non aggiungere altri blocchi dopo la griglia, altrimenti il widget sparisce.
   return (
     <div className="local-guide-widget" style={{
       background: "var(--lightgray)",
@@ -75,11 +64,6 @@ export const LocalGuide: QuartzComponent = () => {
           </div>
         ))}
       </div>
-      {updated && (
-        <div style={{ fontSize: "0.7em", opacity: "0.7", textAlign: "center", marginTop: "6px" }}>
-          Dati aggiornati al {updated}
-        </div>
-      )}
     </div>
   )
 }
