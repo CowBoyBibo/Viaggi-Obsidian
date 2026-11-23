@@ -23,7 +23,7 @@ title: "Archive of my Journey"
     
 -  [[Marzo 2026 🏯]] 
 	
-- [[Novembre 2026 🚧]]
+- [[Novembre 2026 🏮]]
 	
 
 ## ✨Suggerimenti 🇯🇵
