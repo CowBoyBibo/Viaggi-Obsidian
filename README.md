@@ -2,6 +2,8 @@
 
 Diario di viaggio sul Giappone: itinerari, suggerimenti pratici e racconti dei miei viaggi. Le note sono scritte in [Obsidian](https://obsidian.md) e pubblicate come sito statico con [Quartz](https://quartz.jzhao.xyz).
 
+> Nato come raccolta di appunti personali in Obsidian, pubblicato per condividere con amici e parenti consigli e itinerari sul Giappone.
+
 **Sito:** https://cowboybibo.github.io/Viaggi-Obsidian/
 
 ## Come funziona
