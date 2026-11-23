@@ -4,19 +4,16 @@ on:
   workflow_dispatch:
     inputs:
       level:
-        description: "Livello Local Guide"
+        description: "Livello (es. 6)"
         required: false
       points:
-        description: "Punti"
+        description: "Punti (es. 1,7K)"
         required: false
-      reviews:
-        description: "Recensioni"
-        required: false
-      photos:
-        description: "Foto"
+      contributions:
+        description: "Contributi (es. 464)"
         required: false
       views:
-        description: "Visualizzazioni (es. 160k+)"
+        description: "Visualizzazioni (es. 150K)"
         required: false
 
 permissions:
@@ -34,15 +31,13 @@ jobs:
         env:
           LEVEL: ${{ inputs.level }}
           POINTS: ${{ inputs.points }}
-          REVIEWS: ${{ inputs.reviews }}
-          PHOTOS: ${{ inputs.photos }}
+          CONTRIBUTIONS: ${{ inputs.contributions }}
           VIEWS: ${{ inputs.views }}
         run: |
           python3 scripts/update_maps.py \
             --level "$LEVEL" \
             --points "$POINTS" \
-            --reviews "$REVIEWS" \
-            --photos "$PHOTOS" \
+            --contributions "$CONTRIBUTIONS" \
             --views "$VIEWS"
 
       - name: Commit e push

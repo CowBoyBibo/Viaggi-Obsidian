@@ -1,10 +1,11 @@
 """Aggiorna content/data/maps_stats.json con le statistiche Local Guide.
 
-Nessuno scraping: i valori si passano da riga di comando (o dal workflow
-GitHub Actions). I campi non indicati restano quelli già salvati.
+Nessuno scraping: i valori si passano da riga di comando (o dal modulo
+"Run workflow" di GitHub Actions). I campi lasciati vuoti restano quelli
+già salvati. Le voci non più usate (recensioni, foto) vengono eliminate.
 
 Esempio:
-    python update_maps.py --level 6 --points 1700 --views 160k+
+    python update_maps.py --level 6 --points 1,7K --contributions 464 --views 150K
 """
 import argparse
 import json
@@ -12,7 +13,7 @@ import os
 from datetime import date
 
 OUTPUT_PATH = os.path.join("content", "data", "maps_stats.json")
-FIELDS = ["level", "points", "reviews", "photos", "views"]
+FIELDS = ["level", "points", "contributions", "views"]
 
 
 def load_existing():
@@ -28,14 +29,20 @@ def main():
         parser.add_argument(f"--{field}", default="")
     args = parser.parse_args()
 
-    stats = load_existing()
+    existing = load_existing()
+    # tiene solo le voci attuali: le vecchie (recensioni, foto) spariscono
+    stats = {f: existing[f] for f in FIELDS if f in existing}
 
     for field in FIELDS:
         value = getattr(args, field).strip()
         if not value:
             continue
-        # il livello resta un numero, gli altri campi stringhe (come prima)
-        stats[field] = int(value) if field == "level" else value
+        if field == "level":
+            if not value.isdigit():
+                parser.error("Il livello deve essere un numero (es. 6)")
+            stats[field] = int(value)
+        else:
+            stats[field] = value
 
     stats["updated"] = date.today().isoformat()
 

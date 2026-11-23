@@ -1,20 +1,48 @@
-import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
+import { QuartzComponent, QuartzComponentConstructor } from "./types"
 
-// Leggiamo i dati con un fallback sicuro per non bloccare mai il build di Quartz
-let mapsData = {
-  level: 5,
-  views: "100k+",
-  reviews: "17",
-  photos: "38"
+type MapsStats = {
+  level: number | string
+  points: string
+  contributions: string
+  views: string
+  updated?: string
+}
+
+// Dati di riserva: se il file JSON manca o è incompleto il build non fallisce
+let mapsData: MapsStats = {
+  level: 6,
+  points: "1,7K",
+  contributions: "464",
+  views: "150K",
 }
 
 try {
-  mapsData = require("../../content/data/maps_stats.json")
+  mapsData = { ...mapsData, ...require("../../content/data/maps_stats.json") }
 } catch {
-  // Se durante il build non trova il file, usa i dati di fallback senza far fallire il sito
+  // Se durante il build non trova il file, usa i dati di riserva senza far fallire il sito
+}
+
+function formatDate(iso?: string): string | null {
+  if (!iso) return null
+  const d = new Date(iso)
+  if (isNaN(d.getTime())) return null
+  return d.toLocaleDateString("it-IT", {
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+    timeZone: "UTC",
+  })
 }
 
 export const LocalGuide: QuartzComponent = () => {
+  const updated = formatDate(mapsData.updated)
+
+  const stats = [
+    { value: mapsData.contributions, label: "Contributi" },
+    { value: mapsData.points, label: "Punti" },
+    { value: mapsData.views, label: "Visualizzazioni" },
+  ]
+
   return (
     <div className="local-guide-widget" style={{
       background: "var(--lightgray)",
@@ -40,19 +68,18 @@ export const LocalGuide: QuartzComponent = () => {
         padding: "8px",
         borderRadius: "6px"
       }}>
-        <div>
-          <strong style={{ display: "block", fontSize: "1.1em", color: "var(--secondary)" }}>{mapsData.views}</strong>
-          <span style={{ fontSize: "0.85em", opacity: "0.8" }}>Views Foto</span>
-        </div>
-        <div>
-          <strong style={{ display: "block", fontSize: "1.1em", color: "var(--secondary)" }}>{mapsData.reviews}</strong>
-          <span style={{ fontSize: "0.85em", opacity: "0.8" }}>Recensioni</span>
-        </div>
-        <div>
-          <strong style={{ display: "block", fontSize: "1.1em", color: "var(--secondary)" }}>{mapsData.photos}</strong>
-          <span style={{ fontSize: "0.85em", opacity: "0.8" }}>Foto</span>
-        </div>
+        {stats.map((s) => (
+          <div>
+            <strong style={{ display: "block", fontSize: "1.1em", color: "var(--secondary)" }}>{s.value}</strong>
+            <span style={{ fontSize: "0.8em", opacity: "0.8", overflowWrap: "anywhere" }}>{s.label}</span>
+          </div>
+        ))}
       </div>
+      {updated && (
+        <div style={{ fontSize: "0.7em", opacity: "0.7", textAlign: "center", marginTop: "6px" }}>
+          Dati aggiornati al {updated}
+        </div>
+      )}
     </div>
   )
 }
